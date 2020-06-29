@@ -12,7 +12,7 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="usqe1" enabled="true">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="usqe1" enabled="false">
         <collectionProp name="Arguments.arguments">
           <elementProp name="aps" elementType="Argument">
             <stringProp name="Argument.name">aps</stringProp>
@@ -146,7 +146,7 @@
           </elementProp>
           <elementProp name="JWTAuthorization" elementType="Argument">
             <stringProp name="Argument.name">JWTAuthorization</stringProp>
-            <stringProp name="Argument.value">eyJhbGciOiJQUzI1NiIsInR5cGUiOiJKV1QiLCJ4NWMiOiJlSnpObDBuVG9rb1dodmY4aXQ0YkZRd2k2S0lYbVpDTWdzd0NPd1lCR1ZSQUJ2bjFqZDkzcTI3ZHFxNTdJNm8zYllRUlNVNG1KOV96UHNjdlg5WVBSS0tzXzR0RGxpTUxNZ2NjOU83OGdtbXlMTndXam9QeUpRZVRERUV1dTRKdHQyUmpaSnNqeUVQYUNkR05peTdQd2liby04U2JnYUxlUTdrWUV4Mlk2SWhCRTB4NVdNM2NBaFNZNng0RWdRTnFxR21XT2FFODREM1RsTkgwMUFQX01hWlVYUWZVOHhFNnlOQUFJUUxTUlJpY05kR2poRmRDQ1Z2Tm1pYnhjNUdLWnAxUHo4b2pYY2RDR3pvSlItZVhLeHlQelg3NGJ0NFJXeWM2NFZrbms2WW1MalpFb1EtTDVHWTl3X09PME94a1VzeVBpVHlhZDM5dTZPcEYwTXgxS3RZbEZyaFduVFoxR1hyd0ZWT1dwdk5na29wRTFfaDgwaHd3YS12ei0zdC05NVh5WF90S0RtTDNCUjAxVUgyOER5dzB6a1hUTFBEQV9veEg3bkFFV1Z5YXd6WTZlMlcweGtBejktOUF2azhsb1NuMHNjQlhsc0JQWm9rSDBlZWl1NE1JblF5YWVydU8xYktnVDhjclpHUnhQOFF2LXJ0NXZZTkl2Y2FDcmZlS2ZHc25JNnRPUk9HVmltUWQzOHg1UGVyNE9WRnpWVUYzemZxQVROS2NUN3k3TThraU15bmhHb3NlZ1VWbnZmQUpFcHJrZnRMUUd0S2xGblRIblBVeW1mSWNYZF9YeGRtdGFNdnhsamNSQktZTEFDMURmZ0x2Y1JVRDkxVThKdGRTYzJhelFzVllPbkhiYUZUQ1pVVDZ3djBkc0VLXzdPNGpHNW43MDRHa19SVG9VUXZYQXpDMmU3eWJHQ3NFa2E0YnBfaEVvbUttSklzTlZaMVhFdFN3NmdrdVhhQ19vblBmSGk5SVNvS2F0ZktaYkxWNS15cWdQWGFMNEdBWlJXMDBlcEZpdGNFYjBEMjZvQlhpRXM4dnVDVE03VDFUS19GQ0xva0dYSk1zVTVjMy1OU3hPNFJIa3NZbEw5SEFodW1VSGlvVXlsZHJzX2dlUlVUTmM1ZlNaYjdRdEpCZEVKME11VGk0ck05WDlpQnhJVWNaX2FKZHRIN2dpcmk1eVpneldWbG9jb2ZqMm1DSmJjTGN5cEc4aDVYMFBDZFBna0VlQXhjSmo0VHRuVHZ0aTduUXJ4VHo3RjdLZmVkRVlkZ0N6QzJybm91NlJTM05qZHJlT0xfcnVHM3lIRnVfejBDdVFRREVNczhsYTgxYXVEaEFlMV90LWdSQnRrZWdCQURUQVAxV1ljcFBDT0tUaWRhVUZtZ2VwQjhUVFJvSnVla3FBLTRfYmpTS05IT1l1LWlsdkt3R2xiaXFLZHFFNWVuMHNZRTgyWkRrT1VnRXdIWEhFbTF4MGdUT1ZWRG5xRWV2UWRzZjZhUWFYa1VlcVZVZTdsY0xtRDRzQVBzZERfamVBckRmOFlEdkxRRDcyUVB1a3dyLThJQ1g4Rjg5NEhzTHdGWVBzR1BxUUppcjVBVWhIa1F0ODBvZjMyakhfV0hUbmE5T2Q3dlhzaHRyVVB1SWxXS2FtZ2J1SXNmMTRwb1hBZ1luamRQNHowRnBNbnVOVzAtZ2d1Yk8yYUxjRkVRcUFlYjRPcFNCdlN2X2ZMMWRHVlBFNkRhSEVVczVramZYanFTWnB0QU1aSFVLSURSZGFYVmNkSGFncjNIMHQxLURDLUNLcTNKUEpXczZYZmRqUUtIaDdRZlh5RS1McEhHSGdEbzhqNlF5eGx2emFSSm9DTFlLc1hyVTl4dkFvcWlfYlJCVC1vSWwzTTlILTlFRHVPblRBNEFKNU9USVBieUYyUzlHZTl6dkJnSkxERTg4aHBzeGEtWUJYV203a0dkRmJuaGFLeTdFd0lLYzYydVpvWFp4ZXdzM3J3dDNQZGp5eGNMTEE3ZWh5c2Roa0REUnZoS3lhRFVkdXZZTXZCZUdtbmR3cUpwR0wxSkFVRnhvTzcza3NvdmRvSUdzSTd5Z0wtcEQ0Y2NPd3Jrdzh3M20xR1VwYk5DZ0VOdjBPdnY0dzc1VlFHWDJaLXQwMzZhcXhNeUhOdF9KalYydVpyUnZYbnU2M3kxNTNyWGhuRkViQWNkb3FPcE96Y2J6TFJpUi1Gb1hYaWltRjRtYkZYQTdzYUlqWVhUN01McmRVa0xNYXlQTHltZFNTY3o1UUdTNWVjMml0eWZHeEhGaHhydHdUbkJON09ORDlZaXNwVTE1R2hZLWU3MW1YTDB6ZzRRZnpTUzRSV09GRUpSZE1hSU03MjdRZTZ3UG15UDJBV3FrOHpfRC04c19nRjNtVjdDRDZ6ZXdld01kekllem51SDBOQzViNWhrcHAtRnlkUXVyX3hYWXBfOWJzUDl6VXY4STlqLVNHdjBhN292N2x6N3NUZmZHLVgyNFkyLTZfeTl3eDk1MF94WGNsV1c5ajAtNE8xTDE1NFpmb2Y1bU9tYXRkN0EyYWxkU3hoQk5oTFpxQXRqeWpfZTkyZ3ZnVjVBYjREMXUzcm0xdmU1YjNEQndJcmZ4WlVhVVdNNDVPcWlGdzV4U21yaWZ4T0kxbVkxQ1VDUW9XZVhHQWVPNHlSdEJGLVp3czZfYy0zUUk2T284WXVwd1VjTDh3ZzQ0bjBTUndFMExYdHhxNFhieWdab2lvU0NyOENIM3B2YlFGUGVBRzZEWE92dFVYMVBmdFdzV0VUSVcwTTBpY1RwNzZjZ29KbDRnbW9ldGJ2blhYS3FObWhCdXhocDloNDBaM1ZPTC0ycE0zZlVoUEhqZEhrM1ZPWFQwQ1dPWnAtaUdlc2kwaVQxSnZuc1BVZXJCdzkxbHJaY18xNVFNdk5heFRqVGg2cTNhdnN5QTFPOTQtOERud0Uzem1PNndlaktpMC1ONDVQSlV6azZsUW94LVBzWlNMRG0tMHU5R0kyQU5JMGx5WHByN3lzdE9ISDZNbjlScG54eGo4aUdOQndYcmd5U3JYMHN6ZWJkSktwZHprbGNjbUJBQTBZa0RYcldXVUlLblFlS1QzYmw1aHRDeU41cVQ0UjZBSjludE1LR2RISlZlcHJGNDJleks1ZTFiWVJaUlFsbnlORm15Yy1pd3U1Z1NWNE9ORUdSWmZURElMRlRQVV9hVTIwaGNhOVRXaG11aEQyXzg3OGtaLTFxc19xNmNzYV9GNnFfa3JKYmdfbFhPc3Z1em5EOXExTF9JV1hoRHpWcFBKM3RBb3dVNk9ZVjdoYVhzWGJ4NTNnVUlOa1BvME9lTEJ1V1B3SzdaLUZFVnlSb0kzaVhUcW5Nd2NkTkhJSTJWWWp6SVJmSHZ1STM5RTdpXzVfYVBodnBPTU93anEzaXRiZFBVTEU1eDJPV2RuMUZCdnBueVRId1FLU3NKLTlYbXN0SVFPRjk1YVkxeThhUW9TODVEZUVYOURzZHdwMTVndTZkM2RzR1pPV20yM1hHVERtcERid3hKWGRQem9YaDdsZGwyUkg5ZThPTlpiemN1WlBMNGtKbUhwM2U2d1ZYS3o2ZlZtRlVXSFo2MlZ6X2RwM05oNkdqbUlJZXVlUGRROE41TmdsN2RaWTJvOHZuT1dmOENJSmJmS0YyMUdRem1pdDJjdmE0Q2FyeFlMWlV4QjhGZ1ZjNUhXNzN4WjZsZXpuN2ZiSTNyelhnc2tSQS1tX1B0V0p1WGFCRUFZMHl2X2VLa1dIUmtNOXBMTm9RdjhmMUQ1U3NwSFFpRFdTc1hZeXVQcjhyc2syMngzZFNuQVQyWmtXRjJZVkNTOE9BLTdFNjhxSWNDOHlvQndwT0xsNkZRRlJKRnk4MHFzN3JpNXNIOTk5X1E4ai12V3RkVCIsIng1Y2UiOiJERUYifQ.eyJpYXQiOjE1OTMxMDY5NDU4OTUsImV4cCI6MTU5MzE5MzM0NTg5NSwianRpIjoiYmRkYjIyYWEtYTFiMi00YzZiLTkzYmItMjg1Zjk4NTc5NzRiIiwiYm9keSI6eyJkZXZpY2VJZCI6IjQyMWEzYWJjLWFjZmEtMTFlYS1iYjM3LTAyNDJhYzEzMDAwMiIsImRldmljZVR5cGUiOiJtYW5hZ2VkQ3ViaVR2IiwibXNvTmFtZSI6ImNhYmxlY28zIiwiaGFyZHdhcmVTZXJpYWxOdW1iZXIiOiJTTDIwMjAwNjEyMTUwMDAwIn19.ZmKOP7fnQ0I8oadpeX8Uhz6ItD6vGOagdNgi-GGeIf4iqsxxtc7NGP9T4cU33ftGcgB6eBymN3tEUGV60V-w9jVevry9qg3BLRs46nkc6esLT_7N9O5J2i0xO6IXcCP-0LfeNfzdBEMQCTFg1HajBuGvXHB1DkOkIe8BcPRdd-x1wjRxuaMX_bUIUl1U45FfbnGKV6fPzBYOp3sfw_my3MqHjA6LQX0bIyZdY6hwltsDU2JOVwrO8O1-JWwVaWH_twpTizOFnAPym5A5PzIrUx1SNA_AlBRAhD7BC_U_uFBNFFVao_mGGOcqUr8x_AAXhKUVL2cpS-RMrVnyg8I3uQ</stringProp>
+            <stringProp name="Argument.value">eyJhbGciOiJQUzI1NiIsInR5cGUiOiJKV1QiLCJ4NWMiOiJlSnpObDBuVG9rb1dodmY4aXQ0YkZRd2k2S0lYbVpDTWdzd0NPd1lCR1ZSQUJ2bjFqZDkzcTI3ZHFxNTdJNm8zYllRUlNVNG1KOV96UHNjdlg5WVBSS0tzXzR0RGxpTUxNZ2NjOU83OGdtbXlMTndXam9QeUpRZVRERUV1dTRKdHQyUmpaSnNqeUVQYUNkR05peTdQd2liby04U2JnYUxlUTdrWUV4Mlk2SWhCRTB4NVdNM2NBaFNZNng0RWdRTnFxR21XT2FFODREM1RsTkgwMUFQX01hWlVYUWZVOHhFNnlOQUFJUUxTUlJpY05kR2poRmRDQ1Z2Tm1pYnhjNUdLWnAxUHo4b2pYY2RDR3pvSlItZVhLeHlQelg3NGJ0NFJXeWM2NFZrbms2WW1MalpFb1EtTDVHWTl3X09PME94a1VzeVBpVHlhZDM5dTZPcEYwTXgxS3RZbEZyaFduVFoxR1hyd0ZWT1dwdk5na29wRTFfaDgwaHd3YS12ei0zdC05NVh5WF90S0RtTDNCUjAxVUgyOER5dzB6a1hUTFBEQV9veEg3bkFFV1Z5YXd6WTZlMlcweGtBejktOUF2azhsb1NuMHNjQlhsc0JQWm9rSDBlZWl1NE1JblF5YWVydU8xYktnVDhjclpHUnhQOFF2LXJ0NXZZTkl2Y2FDcmZlS2ZHc25JNnRPUk9HVmltUWQzOHg1UGVyNE9WRnpWVUYzemZxQVROS2NUN3k3TThraU15bmhHb3NlZ1VWbnZmQUpFcHJrZnRMUUd0S2xGblRIblBVeW1mSWNYZF9YeGRtdGFNdnhsamNSQktZTEFDMURmZ0x2Y1JVRDkxVThKdGRTYzJhelFzVllPbkhiYUZUQ1pVVDZ3djBkc0VLXzdPNGpHNW43MDRHa19SVG9VUXZYQXpDMmU3eWJHQ3NFa2E0YnBfaEVvbUttSklzTlZaMVhFdFN3NmdrdVhhQ19vblBmSGk5SVNvS2F0ZktaYkxWNS15cWdQWGFMNEdBWlJXMDBlcEZpdGNFYjBEMjZvQlhpRXM4dnVDVE03VDFUS19GQ0xva0dYSk1zVTVjMy1OU3hPNFJIa3NZbEw5SEFodW1VSGlvVXlsZHJzX2dlUlVUTmM1ZlNaYjdRdEpCZEVKME11VGk0ck05WDlpQnhJVWNaX2FKZHRIN2dpcmk1eVpneldWbG9jb2ZqMm1DSmJjTGN5cEc4aDVYMFBDZFBna0VlQXhjSmo0VHRuVHZ0aTduUXJ4VHo3RjdLZmVkRVlkZ0N6QzJybm91NlJTM05qZHJlT0xfcnVHM3lIRnVfejBDdVFRREVNczhsYTgxYXVEaEFlMV90LWdSQnRrZWdCQURUQVAxV1ljcFBDT0tUaWRhVUZtZ2VwQjhUVFJvSnVla3FBLTRfYmpTS05IT1l1LWlsdkt3R2xiaXFLZHFFNWVuMHNZRTgyWkRrT1VnRXdIWEhFbTF4MGdUT1ZWRG5xRWV2UWRzZjZhUWFYa1VlcVZVZTdsY0xtRDRzQVBzZERfamVBckRmOFlEdkxRRDcyUVB1a3dyLThJQ1g4Rjg5NEhzTHdGWVBzR1BxUUppcjVBVWhIa1F0ODBvZjMyakhfV0hUbmE5T2Q3dlhzaHRyVVB1SWxXS2FtZ2J1SXNmMTRwb1hBZ1luamRQNHowRnBNbnVOVzAtZ2d1Yk8yYUxjRkVRcUFlYjRPcFNCdlN2X2ZMMWRHVlBFNkRhSEVVczVramZYanFTWnB0QU1aSFVLSURSZGFYVmNkSGFncjNIMHQxLURDLUNLcTNKUEpXczZYZmRqUUtIaDdRZlh5RS1McEhHSGdEbzhqNlF5eGx2emFSSm9DTFlLc1hyVTl4dkFvcWlfYlJCVC1vSWwzTTlILTlFRHVPblRBNEFKNU9USVBieUYyUzlHZTl6dkJnSkxERTg4aHBzeGEtWUJYV203a0dkRmJuaGFLeTdFd0lLYzYydVpvWFp4ZXdzM3J3dDNQZGp5eGNMTEE3ZWh5c2Roa0REUnZoS3lhRFVkdXZZTXZCZUdtbmR3cUpwR0wxSkFVRnhvTzcza3NvdmRvSUdzSTd5Z0wtcEQ0Y2NPd3Jrdzh3M20xR1VwYk5DZ0VOdjBPdnY0dzc1VlFHWDJaLXQwMzZhcXhNeUhOdF9KalYydVpyUnZYbnU2M3kxNTNyWGhuRkViQWNkb3FPcE96Y2J6TFJpUi1Gb1hYaWltRjRtYkZYQTdzYUlqWVhUN01McmRVa0xNYXlQTHltZFNTY3o1UUdTNWVjMml0eWZHeEhGaHhydHdUbkJON09ORDlZaXNwVTE1R2hZLWU3MW1YTDB6ZzRRZnpTUzRSV09GRUpSZE1hSU03MjdRZTZ3UG15UDJBV3FrOHpfRC04c19nRjNtVjdDRDZ6ZXdld01kekllem51SDBOQzViNWhrcHAtRnlkUXVyX3hYWXBfOWJzUDl6VXY4STlqLVNHdjBhN292N2x6N3NUZmZHLVgyNFkyLTZfeTl3eDk1MF94WGNsV1c5ajAtNE8xTDE1NFpmb2Y1bU9tYXRkN0EyYWxkU3hoQk5oTFpxQXRqeWpfZTkyZ3ZnVjVBYjREMXUzcm0xdmU1YjNEQndJcmZ4WlVhVVdNNDVPcWlGdzV4U21yaWZ4T0kxbVkxQ1VDUW9XZVhHQWVPNHlSdEJGLVp3czZfYy0zUUk2T284WXVwd1VjTDh3ZzQ0bjBTUndFMExYdHhxNFhieWdab2lvU0NyOENIM3B2YlFGUGVBRzZEWE92dFVYMVBmdFdzV0VUSVcwTTBpY1RwNzZjZ29KbDRnbW9ldGJ2blhYS3FObWhCdXhocDloNDBaM1ZPTC0ycE0zZlVoUEhqZEhrM1ZPWFQwQ1dPWnAtaUdlc2kwaVQxSnZuc1BVZXJCdzkxbHJaY18xNVFNdk5heFRqVGg2cTNhdnN5QTFPOTQtOERud0Uzem1PNndlaktpMC1ONDVQSlV6azZsUW94LVBzWlNMRG0tMHU5R0kyQU5JMGx5WHByN3lzdE9ISDZNbjlScG54eGo4aUdOQndYcmd5U3JYMHN6ZWJkSktwZHprbGNjbUJBQTBZa0RYcldXVUlLblFlS1QzYmw1aHRDeU41cVQ0UjZBSjludE1LR2RISlZlcHJGNDJleks1ZTFiWVJaUlFsbnlORm15Yy1pd3U1Z1NWNE9ORUdSWmZURElMRlRQVV9hVTIwaGNhOVRXaG11aEQyXzg3OGtaLTFxc19xNmNzYV9GNnFfa3JKYmdfbFhPc3Z1em5EOXExTF9JV1hoRHpWcFBKM3RBb3dVNk9ZVjdoYVhzWGJ4NTNnVUlOa1BvME9lTEJ1V1B3SzdaLUZFVnlSb0kzaVhUcW5Nd2NkTkhJSTJWWWp6SVJmSHZ1STM5RTdpXzVfYVBodnBPTU93anEzaXRiZFBVTEU1eDJPV2RuMUZCdnBueVRId1FLU3NKLTlYbXN0SVFPRjk1YVkxeThhUW9TODVEZUVYOURzZHdwMTVndTZkM2RzR1pPV20yM1hHVERtcERid3hKWGRQem9YaDdsZGwyUkg5ZThPTlpiemN1WlBMNGtKbUhwM2U2d1ZYS3o2ZlZtRlVXSFo2MlZ6X2RwM05oNkdqbUlJZXVlUGRROE41TmdsN2RaWTJvOHZuT1dmOENJSmJmS0YyMUdRem1pdDJjdmE0Q2FyeFlMWlV4QjhGZ1ZjNUhXNzN4WjZsZXpuN2ZiSTNyelhnc2tSQS1tX1B0V0p1WGFCRUFZMHl2X2VLa1dIUmtNOXBMTm9RdjhmMUQ1U3NwSFFpRFdTc1hZeXVQcjhyc2syMngzZFNuQVQyWmtXRjJZVkNTOE9BLTdFNjhxSWNDOHlvQndwT0xsNkZRRlJKRnk4MHFzN3JpNXNIOTk5X1E4ai12V3RkVCIsIng1Y2UiOiJERUYifQ.eyJpYXQiOjE1OTM0NDgzNjI2ODUsImV4cCI6MTU5MzUzNDc2MjY4NSwianRpIjoiNjBjOTU3NzAtNTZkNy00YWUxLWE1NjItNzM1MGY1NjE1ZTI4IiwiYm9keSI6eyJkZXZpY2VJZCI6IjQyMWEzYWJjLWFjZmEtMTFlYS1iYjM3LTAyNDJhYzEzMDAwMiIsImRldmljZVR5cGUiOiJtYW5hZ2VkQ3ViaVR2IiwibXNvTmFtZSI6ImNhYmxlY28zIiwiaGFyZHdhcmVTZXJpYWxOdW1iZXIiOiJTTDIwMjAwNjEyMTUwMDAwIn19.SsibeogUFJHnBAgoY0X_yc0ODNVI_1OHMCZe03olVFoZ9eQ1WdSp0Th36YKJeu8WPhMO6uwP3p9PPxNUdz8uQWK9STWLOfNnhLwtDYXoV7VQbKFsy_AuY4TKOEKA7a7XrYP2Y8Ba1UgrwcAkC75PBthhPyyQNEmbjZ_pm_TgcKyCSo5GCEioCo_WgbdeIhZiZ-BeX74tJoPO-joM76y9WXRCzxQzXDcjmdDvvKKFwb-qi5oLihcpdu5SdaYd2sK4DTwR8e6QEVxnsUP3uqP_DwJUv9feJs3pkX9jzd90mxF5v0Y0ZGtlInvOwHlGU3exxVWthwt0aS1qpO9X7-1cMA</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="mind" elementType="Argument">
@@ -197,7 +197,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="cdvrqe1" enabled="false">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="cdvrqe1" enabled="true">
         <collectionProp name="Arguments.arguments">
           <elementProp name="aps" elementType="Argument">
             <stringProp name="Argument.name">aps</stringProp>
@@ -211,7 +211,7 @@
           </elementProp>
           <elementProp name="authorization" elementType="Argument">
             <stringProp name="Argument.name">authorization</stringProp>
-            <stringProp name="Argument.value">eyJkb21haW4iOiJjYWJsZWNvMy1tYW5hZ2Vkc29mdCIsInRva2VuIjoiOE1vT3lFa01LMThfUzV1MlM0ZElXUU9SNENfdmhBS3pocXVnQ2hQdW5GTTI5TG94LkViRmhLZ2tFVzhLalQ3b2RRbEFSYUtrYVJ1d1Nha3ZObmZxQTlqSWd3SGliX21OanAwTXpFck80eldlYnZ6S0lhRG1Bb252OG1OLkV3YnQzaFVheE5hM2xJQVBnMzdaelpJaW9kR2FXbkJaMXFsVFZ6U21CNXguZjRqakY1RDEzaWIuYjBVdUc0SzlaN3NFTjRQanp4OVpVZUUyMHJ5V19NdXA5TVBzRnkzOHpUSU80RzlpN0VYZm9mRFRUSGp2Q2FNMnNUSktHWG5MYkp1enlPWlU0NGVrb2t6NnhZcTBoSTBvNFZkQnBDSVN4RDR5Nlg4aHNoMG1aem8tIiwidHlwZSI6ImRvbWFpblRva2VuIn0=</stringProp>
+            <stringProp name="Argument.value">eyJkb21haW4iOiJjYWJsZWNvMy1kYnMiLCJ0b2tlbiI6IjJDTThvb29Nbm9KWnRJS2RnTG5Eem9VYW52RDBmeE1vTkZvaWxxN1NscFIxbTEwcnhvOWUzR0tVdEhUNjFraVJ6U1VOVzBxZTdiUi5OaWlZTl96S3k1ZHVVcnJEZ1gzMXhnYXpYUHNwLk1ueEJNLnJ0RW9QUE5DNmkuS0s3ZlVrX1ZGRWhEcFd1Qy5VelF0cVkwNnQwZ29hR0V1Tjc3VmloRC5id3V1bVhndGF5cXRvT0QxR1lfb29pSVBhV3Q2V1RoS0FzR0VJNE8uWi5ZREJHUERVQUlDV05OekVNOVVMa1BMYzR1U3gySDh1R19vS3ZILkhHVkxLYTBndzJfTUtKcWxSYWZGMngzb3hUcl9wRWNuQ1kwTThHZVhpcm9MUCIsInR5cGUiOiJkb21haW5Ub2tlbiJ9</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="host_disc" elementType="Argument">
@@ -231,7 +231,12 @@
           </elementProp>
           <elementProp name="host_event_node" elementType="Argument">
             <stringProp name="Argument.name">host_event_node</stringProp>
-            <stringProp name="Argument.value">http://aps-events-ts-latest-01.tea2.tivo.com:40295</stringProp>
+            <stringProp name="Argument.value">aps-events-ts-latest-01.tea2.tivo.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="host_event_port" elementType="Argument">
+            <stringProp name="Argument.name">host_event_port</stringProp>
+            <stringProp name="Argument.value">40295</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="host_dbs" elementType="Argument">
@@ -331,7 +336,7 @@
           </elementProp>
           <elementProp name="JWTAuthorization" elementType="Argument">
             <stringProp name="Argument.name">JWTAuthorization</stringProp>
-            <stringProp name="Argument.value">eyJhbGciOiJQUzI1NiIsInR5cGUiOiJKV1QiLCJ4NWMiOiJlSnpObDBuVG9rb1dodmY4aXQ0YkZRd2k2S0lYbVpDTWdzd0NPd1lCR1ZSQUJ2bjFqZDkzcTI3ZHFxNTdJNm8zYllRUlNVNG1KOV96UHNjdlg5WVBSS0tzXzR0RGxpTUxNZ2NjOU83OGdtbXlMTndXam9QeUpRZVRERUV1dTRKdHQyUmpaSnNqeUVQYUNkR05peTdQd2liby04U2JnYUxlUTdrWUV4Mlk2SWhCRTB4NVdNM2NBaFNZNng0RWdRTnFxR21XT2FFODREM1RsTkgwMUFQX01hWlVYUWZVOHhFNnlOQUFJUUxTUlJpY05kR2poRmRDQ1Z2Tm1pYnhjNUdLWnAxUHo4b2pYY2RDR3pvSlItZVhLeHlQelg3NGJ0NFJXeWM2NFZrbms2WW1MalpFb1EtTDVHWTl3X09PME94a1VzeVBpVHlhZDM5dTZPcEYwTXgxS3RZbEZyaFduVFoxR1hyd0ZWT1dwdk5na29wRTFfaDgwaHd3YS12ei0zdC05NVh5WF90S0RtTDNCUjAxVUgyOER5dzB6a1hUTFBEQV9veEg3bkFFV1Z5YXd6WTZlMlcweGtBejktOUF2azhsb1NuMHNjQlhsc0JQWm9rSDBlZWl1NE1JblF5YWVydU8xYktnVDhjclpHUnhQOFF2LXJ0NXZZTkl2Y2FDcmZlS2ZHc25JNnRPUk9HVmltUWQzOHg1UGVyNE9WRnpWVUYzemZxQVROS2NUN3k3TThraU15bmhHb3NlZ1VWbnZmQUpFcHJrZnRMUUd0S2xGblRIblBVeW1mSWNYZF9YeGRtdGFNdnhsamNSQktZTEFDMURmZ0x2Y1JVRDkxVThKdGRTYzJhelFzVllPbkhiYUZUQ1pVVDZ3djBkc0VLXzdPNGpHNW43MDRHa19SVG9VUXZYQXpDMmU3eWJHQ3NFa2E0YnBfaEVvbUttSklzTlZaMVhFdFN3NmdrdVhhQ19vblBmSGk5SVNvS2F0ZktaYkxWNS15cWdQWGFMNEdBWlJXMDBlcEZpdGNFYjBEMjZvQlhpRXM4dnVDVE03VDFUS19GQ0xva0dYSk1zVTVjMy1OU3hPNFJIa3NZbEw5SEFodW1VSGlvVXlsZHJzX2dlUlVUTmM1ZlNaYjdRdEpCZEVKME11VGk0ck05WDlpQnhJVWNaX2FKZHRIN2dpcmk1eVpneldWbG9jb2ZqMm1DSmJjTGN5cEc4aDVYMFBDZFBna0VlQXhjSmo0VHRuVHZ0aTduUXJ4VHo3RjdLZmVkRVlkZ0N6QzJybm91NlJTM05qZHJlT0xfcnVHM3lIRnVfejBDdVFRREVNczhsYTgxYXVEaEFlMV90LWdSQnRrZWdCQURUQVAxV1ljcFBDT0tUaWRhVUZtZ2VwQjhUVFJvSnVla3FBLTRfYmpTS05IT1l1LWlsdkt3R2xiaXFLZHFFNWVuMHNZRTgyWkRrT1VnRXdIWEhFbTF4MGdUT1ZWRG5xRWV2UWRzZjZhUWFYa1VlcVZVZTdsY0xtRDRzQVBzZERfamVBckRmOFlEdkxRRDcyUVB1a3dyLThJQ1g4Rjg5NEhzTHdGWVBzR1BxUUppcjVBVWhIa1F0ODBvZjMyakhfV0hUbmE5T2Q3dlhzaHRyVVB1SWxXS2FtZ2J1SXNmMTRwb1hBZ1luamRQNHowRnBNbnVOVzAtZ2d1Yk8yYUxjRkVRcUFlYjRPcFNCdlN2X2ZMMWRHVlBFNkRhSEVVczVramZYanFTWnB0QU1aSFVLSURSZGFYVmNkSGFncjNIMHQxLURDLUNLcTNKUEpXczZYZmRqUUtIaDdRZlh5RS1McEhHSGdEbzhqNlF5eGx2emFSSm9DTFlLc1hyVTl4dkFvcWlfYlJCVC1vSWwzTTlILTlFRHVPblRBNEFKNU9USVBieUYyUzlHZTl6dkJnSkxERTg4aHBzeGEtWUJYV203a0dkRmJuaGFLeTdFd0lLYzYydVpvWFp4ZXdzM3J3dDNQZGp5eGNMTEE3ZWh5c2Roa0REUnZoS3lhRFVkdXZZTXZCZUdtbmR3cUpwR0wxSkFVRnhvTzcza3NvdmRvSUdzSTd5Z0wtcEQ0Y2NPd3Jrdzh3M20xR1VwYk5DZ0VOdjBPdnY0dzc1VlFHWDJaLXQwMzZhcXhNeUhOdF9KalYydVpyUnZYbnU2M3kxNTNyWGhuRkViQWNkb3FPcE96Y2J6TFJpUi1Gb1hYaWltRjRtYkZYQTdzYUlqWVhUN01McmRVa0xNYXlQTHltZFNTY3o1UUdTNWVjMml0eWZHeEhGaHhydHdUbkJON09ORDlZaXNwVTE1R2hZLWU3MW1YTDB6ZzRRZnpTUzRSV09GRUpSZE1hSU03MjdRZTZ3UG15UDJBV3FrOHpfRC04c19nRjNtVjdDRDZ6ZXdld01kekllem51SDBOQzViNWhrcHAtRnlkUXVyX3hYWXBfOWJzUDl6VXY4STlqLVNHdjBhN292N2x6N3NUZmZHLVgyNFkyLTZfeTl3eDk1MF94WGNsV1c5ajAtNE8xTDE1NFpmb2Y1bU9tYXRkN0EyYWxkU3hoQk5oTFpxQXRqeWpfZTkyZ3ZnVjVBYjREMXUzcm0xdmU1YjNEQndJcmZ4WlVhVVdNNDVPcWlGdzV4U21yaWZ4T0kxbVkxQ1VDUW9XZVhHQWVPNHlSdEJGLVp3czZfYy0zUUk2T284WXVwd1VjTDh3ZzQ0bjBTUndFMExYdHhxNFhieWdab2lvU0NyOENIM3B2YlFGUGVBRzZEWE92dFVYMVBmdFdzV0VUSVcwTTBpY1RwNzZjZ29KbDRnbW9ldGJ2blhYS3FObWhCdXhocDloNDBaM1ZPTC0ycE0zZlVoUEhqZEhrM1ZPWFQwQ1dPWnAtaUdlc2kwaVQxSnZuc1BVZXJCdzkxbHJaY18xNVFNdk5heFRqVGg2cTNhdnN5QTFPOTQtOERud0Uzem1PNndlaktpMC1ONDVQSlV6azZsUW94LVBzWlNMRG0tMHU5R0kyQU5JMGx5WHByN3lzdE9ISDZNbjlScG54eGo4aUdOQndYcmd5U3JYMHN6ZWJkSktwZHprbGNjbUJBQTBZa0RYcldXVUlLblFlS1QzYmw1aHRDeU41cVQ0UjZBSjludE1LR2RISlZlcHJGNDJleks1ZTFiWVJaUlFsbnlORm15Yy1pd3U1Z1NWNE9ORUdSWmZURElMRlRQVV9hVTIwaGNhOVRXaG11aEQyXzg3OGtaLTFxc19xNmNzYV9GNnFfa3JKYmdfbFhPc3Z1em5EOXExTF9JV1hoRHpWcFBKM3RBb3dVNk9ZVjdoYVhzWGJ4NTNnVUlOa1BvME9lTEJ1V1B3SzdaLUZFVnlSb0kzaVhUcW5Nd2NkTkhJSTJWWWp6SVJmSHZ1STM5RTdpXzVfYVBodnBPTU93anEzaXRiZFBVTEU1eDJPV2RuMUZCdnBueVRId1FLU3NKLTlYbXN0SVFPRjk1YVkxeThhUW9TODVEZUVYOURzZHdwMTVndTZkM2RzR1pPV20yM1hHVERtcERid3hKWGRQem9YaDdsZGwyUkg5ZThPTlpiemN1WlBMNGtKbUhwM2U2d1ZYS3o2ZlZtRlVXSFo2MlZ6X2RwM05oNkdqbUlJZXVlUGRROE41TmdsN2RaWTJvOHZuT1dmOENJSmJmS0YyMUdRem1pdDJjdmE0Q2FyeFlMWlV4QjhGZ1ZjNUhXNzN4WjZsZXpuN2ZiSTNyelhnc2tSQS1tX1B0V0p1WGFCRUFZMHl2X2VLa1dIUmtNOXBMTm9RdjhmMUQ1U3NwSFFpRFdTc1hZeXVQcjhyc2syMngzZFNuQVQyWmtXRjJZVkNTOE9BLTdFNjhxSWNDOHlvQndwT0xsNkZRRlJKRnk4MHFzN3JpNXNIOTk5X1E4ai12V3RkVCIsIng1Y2UiOiJERUYifQ.eyJpYXQiOjE1OTMxMjI5MzIyNzIsImV4cCI6MTU5MzIwOTMzMjI3MiwianRpIjoiOTkzYTljNTAtZDhlMi00NTU2LTg0MWUtMDBmNmVkMjdiZWZjIiwiYm9keSI6eyJkZXZpY2VJZCI6IjQyMWEzYWJjLWFjZmEtMTFlYS1iYjM3LTAyNDJhYzEzMDAwMiIsImRldmljZVR5cGUiOiJtYW5hZ2VkQ3ViaVR2IiwibXNvTmFtZSI6ImNhYmxlY28zIiwiaGFyZHdhcmVTZXJpYWxOdW1iZXIiOiJTTDIwMjAwNjEyMTUwMDAwIn19.cqm30CL74m44ZnUxo-DoqoAVLtkNev2dNHweBYi0x_msXIMj7YQkkv-AMwXTmtK8GWIiw8mTs94ZJQ66Zg_XT9W5PSkghUwv0DCp8p-Hc9dlEEJJDC4mHzxb-iGpGUE0BNuf-8Avy8dqt1-PBiW7KBCSgf2uXI--jqJFOc_J1RpU1KOOLm5dM7PFI_iLWvLZa54lgLEOiNgFaHVKawMDgFf9axHM0po--jQyeijIm39Ul_cqKRoT7Y1f1KdMeZg5r9MUS0FaZuBj0hsX67Bfv6W0mj6vZGtlpk2dWLF3ZPcyq5_NG8ssStix4bQFcotw8sap8sc5SphXuUICdJRRZg</stringProp>
+            <stringProp name="Argument.value">eyJhbGciOiJQUzI1NiIsInR5cGUiOiJKV1QiLCJ4NWMiOiJlSnpObDBuVG9rb1dodmY4aXQ0YkZRd2k2S0lYbVpDTWdzd0NPd1lCR1ZSQUJ2bjFqZDkzcTI3ZHFxNTdJNm8zYllRUlNVNG1KOV96UHNjdlg5WVBSS0tzXzR0RGxpTUxNZ2NjOU83OGdtbXlMTndXam9QeUpRZVRERUV1dTRKdHQyUmpaSnNqeUVQYUNkR05peTdQd2liby04U2JnYUxlUTdrWUV4Mlk2SWhCRTB4NVdNM2NBaFNZNng0RWdRTnFxR21XT2FFODREM1RsTkgwMUFQX01hWlVYUWZVOHhFNnlOQUFJUUxTUlJpY05kR2poRmRDQ1Z2Tm1pYnhjNUdLWnAxUHo4b2pYY2RDR3pvSlItZVhLeHlQelg3NGJ0NFJXeWM2NFZrbms2WW1MalpFb1EtTDVHWTl3X09PME94a1VzeVBpVHlhZDM5dTZPcEYwTXgxS3RZbEZyaFduVFoxR1hyd0ZWT1dwdk5na29wRTFfaDgwaHd3YS12ei0zdC05NVh5WF90S0RtTDNCUjAxVUgyOER5dzB6a1hUTFBEQV9veEg3bkFFV1Z5YXd6WTZlMlcweGtBejktOUF2azhsb1NuMHNjQlhsc0JQWm9rSDBlZWl1NE1JblF5YWVydU8xYktnVDhjclpHUnhQOFF2LXJ0NXZZTkl2Y2FDcmZlS2ZHc25JNnRPUk9HVmltUWQzOHg1UGVyNE9WRnpWVUYzemZxQVROS2NUN3k3TThraU15bmhHb3NlZ1VWbnZmQUpFcHJrZnRMUUd0S2xGblRIblBVeW1mSWNYZF9YeGRtdGFNdnhsamNSQktZTEFDMURmZ0x2Y1JVRDkxVThKdGRTYzJhelFzVllPbkhiYUZUQ1pVVDZ3djBkc0VLXzdPNGpHNW43MDRHa19SVG9VUXZYQXpDMmU3eWJHQ3NFa2E0YnBfaEVvbUttSklzTlZaMVhFdFN3NmdrdVhhQ19vblBmSGk5SVNvS2F0ZktaYkxWNS15cWdQWGFMNEdBWlJXMDBlcEZpdGNFYjBEMjZvQlhpRXM4dnVDVE03VDFUS19GQ0xva0dYSk1zVTVjMy1OU3hPNFJIa3NZbEw5SEFodW1VSGlvVXlsZHJzX2dlUlVUTmM1ZlNaYjdRdEpCZEVKME11VGk0ck05WDlpQnhJVWNaX2FKZHRIN2dpcmk1eVpneldWbG9jb2ZqMm1DSmJjTGN5cEc4aDVYMFBDZFBna0VlQXhjSmo0VHRuVHZ0aTduUXJ4VHo3RjdLZmVkRVlkZ0N6QzJybm91NlJTM05qZHJlT0xfcnVHM3lIRnVfejBDdVFRREVNczhsYTgxYXVEaEFlMV90LWdSQnRrZWdCQURUQVAxV1ljcFBDT0tUaWRhVUZtZ2VwQjhUVFJvSnVla3FBLTRfYmpTS05IT1l1LWlsdkt3R2xiaXFLZHFFNWVuMHNZRTgyWkRrT1VnRXdIWEhFbTF4MGdUT1ZWRG5xRWV2UWRzZjZhUWFYa1VlcVZVZTdsY0xtRDRzQVBzZERfamVBckRmOFlEdkxRRDcyUVB1a3dyLThJQ1g4Rjg5NEhzTHdGWVBzR1BxUUppcjVBVWhIa1F0ODBvZjMyakhfV0hUbmE5T2Q3dlhzaHRyVVB1SWxXS2FtZ2J1SXNmMTRwb1hBZ1luamRQNHowRnBNbnVOVzAtZ2d1Yk8yYUxjRkVRcUFlYjRPcFNCdlN2X2ZMMWRHVlBFNkRhSEVVczVramZYanFTWnB0QU1aSFVLSURSZGFYVmNkSGFncjNIMHQxLURDLUNLcTNKUEpXczZYZmRqUUtIaDdRZlh5RS1McEhHSGdEbzhqNlF5eGx2emFSSm9DTFlLc1hyVTl4dkFvcWlfYlJCVC1vSWwzTTlILTlFRHVPblRBNEFKNU9USVBieUYyUzlHZTl6dkJnSkxERTg4aHBzeGEtWUJYV203a0dkRmJuaGFLeTdFd0lLYzYydVpvWFp4ZXdzM3J3dDNQZGp5eGNMTEE3ZWh5c2Roa0REUnZoS3lhRFVkdXZZTXZCZUdtbmR3cUpwR0wxSkFVRnhvTzcza3NvdmRvSUdzSTd5Z0wtcEQ0Y2NPd3Jrdzh3M20xR1VwYk5DZ0VOdjBPdnY0dzc1VlFHWDJaLXQwMzZhcXhNeUhOdF9KalYydVpyUnZYbnU2M3kxNTNyWGhuRkViQWNkb3FPcE96Y2J6TFJpUi1Gb1hYaWltRjRtYkZYQTdzYUlqWVhUN01McmRVa0xNYXlQTHltZFNTY3o1UUdTNWVjMml0eWZHeEhGaHhydHdUbkJON09ORDlZaXNwVTE1R2hZLWU3MW1YTDB6ZzRRZnpTUzRSV09GRUpSZE1hSU03MjdRZTZ3UG15UDJBV3FrOHpfRC04c19nRjNtVjdDRDZ6ZXdld01kekllem51SDBOQzViNWhrcHAtRnlkUXVyX3hYWXBfOWJzUDl6VXY4STlqLVNHdjBhN292N2x6N3NUZmZHLVgyNFkyLTZfeTl3eDk1MF94WGNsV1c5ajAtNE8xTDE1NFpmb2Y1bU9tYXRkN0EyYWxkU3hoQk5oTFpxQXRqeWpfZTkyZ3ZnVjVBYjREMXUzcm0xdmU1YjNEQndJcmZ4WlVhVVdNNDVPcWlGdzV4U21yaWZ4T0kxbVkxQ1VDUW9XZVhHQWVPNHlSdEJGLVp3czZfYy0zUUk2T284WXVwd1VjTDh3ZzQ0bjBTUndFMExYdHhxNFhieWdab2lvU0NyOENIM3B2YlFGUGVBRzZEWE92dFVYMVBmdFdzV0VUSVcwTTBpY1RwNzZjZ29KbDRnbW9ldGJ2blhYS3FObWhCdXhocDloNDBaM1ZPTC0ycE0zZlVoUEhqZEhrM1ZPWFQwQ1dPWnAtaUdlc2kwaVQxSnZuc1BVZXJCdzkxbHJaY18xNVFNdk5heFRqVGg2cTNhdnN5QTFPOTQtOERud0Uzem1PNndlaktpMC1ONDVQSlV6azZsUW94LVBzWlNMRG0tMHU5R0kyQU5JMGx5WHByN3lzdE9ISDZNbjlScG54eGo4aUdOQndYcmd5U3JYMHN6ZWJkSktwZHprbGNjbUJBQTBZa0RYcldXVUlLblFlS1QzYmw1aHRDeU41cVQ0UjZBSjludE1LR2RISlZlcHJGNDJleks1ZTFiWVJaUlFsbnlORm15Yy1pd3U1Z1NWNE9ORUdSWmZURElMRlRQVV9hVTIwaGNhOVRXaG11aEQyXzg3OGtaLTFxc19xNmNzYV9GNnFfa3JKYmdfbFhPc3Z1em5EOXExTF9JV1hoRHpWcFBKM3RBb3dVNk9ZVjdoYVhzWGJ4NTNnVUlOa1BvME9lTEJ1V1B3SzdaLUZFVnlSb0kzaVhUcW5Nd2NkTkhJSTJWWWp6SVJmSHZ1STM5RTdpXzVfYVBodnBPTU93anEzaXRiZFBVTEU1eDJPV2RuMUZCdnBueVRId1FLU3NKLTlYbXN0SVFPRjk1YVkxeThhUW9TODVEZUVYOURzZHdwMTVndTZkM2RzR1pPV20yM1hHVERtcERid3hKWGRQem9YaDdsZGwyUkg5ZThPTlpiemN1WlBMNGtKbUhwM2U2d1ZYS3o2ZlZtRlVXSFo2MlZ6X2RwM05oNkdqbUlJZXVlUGRROE41TmdsN2RaWTJvOHZuT1dmOENJSmJmS0YyMUdRem1pdDJjdmE0Q2FyeFlMWlV4QjhGZ1ZjNUhXNzN4WjZsZXpuN2ZiSTNyelhnc2tSQS1tX1B0V0p1WGFCRUFZMHl2X2VLa1dIUmtNOXBMTm9RdjhmMUQ1U3NwSFFpRFdTc1hZeXVQcjhyc2syMngzZFNuQVQyWmtXRjJZVkNTOE9BLTdFNjhxSWNDOHlvQndwT0xsNkZRRlJKRnk4MHFzN3JpNXNIOTk5X1E4ai12V3RkVCIsIng1Y2UiOiJERUYifQ.eyJpYXQiOjE1OTMxMjI5MzIyNzIsImV4cCI6MTU5MzIwOTMzMjI3MiwianRpIjoiOTkzYTljNTAtZDhlMi00NTU2LTg0MWUtMDBmNmVkMjdiZWZjIiwiYm9keSI6eyJkZXZpY2VJZCI6IjQyMWEzYWJjLWFjZmEtMTFlYS1iYjM3LTAyNDJhYzEzMDAwMiIsImRldmljZVR5cGUiOiJtYW5hZ2VkQ3ViaVR2IiwibXNvTmFtZSI6ImNhYmxlY28zIiwiaGFyZHdhcmVTZXJpYWxOdW1iZXIiOiJTTDIwMjAwNjEyMTUwMDAwIn19.cqm30CL74m44ZnUxo-DoqoAVLtkNev2dNHweBYi0x_msXIMj7YQkkv-AMwXTmtK8GWIiw8mTs94ZJQ66Zg_XT9W5PSkghUwv0DCp8p-Hc9dlEEJJDC4mHzxb-iGpGUE0BNuf-8Avy8dqt1-PBiW7KBCSgf2uXI--jqJFOc_J1RpU1KOOLm5dM7PFI_iLWvLZa54lgLEOiNgFaHVKawMDgFf9axHM0po--eyJhbGciOiJQUzI1NiIsInR5cGUiOiJKV1QiLCJ4NWMiOiJlSnpObDBuVG9rb1dodmY4aXQ0YkZRd2k2S0lYbVpDTWdzd0NPd1lCR1ZSQUJ2bjFqZDkzcTI3ZHFxNTdJNm8zYllRUlNVNG1KOV96UHNjdlg5WVBSS0tzXzR0RGxpTUxNZ2NjOU83OGdtbXlMTndXam9QeUpRZVRERUV1dTRKdHQyUmpaSnNqeUVQYUNkR05peTdQd2liby04U2JnYUxlUTdrWUV4Mlk2SWhCRTB4NVdNM2NBaFNZNng0RWdRTnFxR21XT2FFODREM1RsTkgwMUFQX01hWlVYUWZVOHhFNnlOQUFJUUxTUlJpY05kR2poRmRDQ1Z2Tm1pYnhjNUdLWnAxUHo4b2pYY2RDR3pvSlItZVhLeHlQelg3NGJ0NFJXeWM2NFZrbms2WW1MalpFb1EtTDVHWTl3X09PME94a1VzeVBpVHlhZDM5dTZPcEYwTXgxS3RZbEZyaFduVFoxR1hyd0ZWT1dwdk5na29wRTFfaDgwaHd3YS12ei0zdC05NVh5WF90S0RtTDNCUjAxVUgyOER5dzB6a1hUTFBEQV9veEg3bkFFV1Z5YXd6WTZlMlcweGtBejktOUF2azhsb1NuMHNjQlhsc0JQWm9rSDBlZWl1NE1JblF5YWVydU8xYktnVDhjclpHUnhQOFF2LXJ0NXZZTkl2Y2FDcmZlS2ZHc25JNnRPUk9HVmltUWQzOHg1UGVyNE9WRnpWVUYzemZxQVROS2NUN3k3TThraU15bmhHb3NlZ1VWbnZmQUpFcHJrZnRMUUd0S2xGblRIblBVeW1mSWNYZF9YeGRtdGFNdnhsamNSQktZTEFDMURmZ0x2Y1JVRDkxVThKdGRTYzJhelFzVllPbkhiYUZUQ1pVVDZ3djBkc0VLXzdPNGpHNW43MDRHa19SVG9VUXZYQXpDMmU3eWJHQ3NFa2E0YnBfaEVvbUttSklzTlZaMVhFdFN3NmdrdVhhQ19vblBmSGk5SVNvS2F0ZktaYkxWNS15cWdQWGFMNEdBWlJXMDBlcEZpdGNFYjBEMjZvQlhpRXM4dnVDVE03VDFUS19GQ0xva0dYSk1zVTVjMy1OU3hPNFJIa3NZbEw5SEFodW1VSGlvVXlsZHJzX2dlUlVUTmM1ZlNaYjdRdEpCZEVKME11VGk0ck05WDlpQnhJVWNaX2FKZHRIN2dpcmk1eVpneldWbG9jb2ZqMm1DSmJjTGN5cEc4aDVYMFBDZFBna0VlQXhjSmo0VHRuVHZ0aTduUXJ4VHo3RjdLZmVkRVlkZ0N6QzJybm91NlJTM05qZHJlT0xfcnVHM3lIRnVfejBDdVFRREVNczhsYTgxYXVEaEFlMV90LWdSQnRrZWdCQURUQVAxV1ljcFBDT0tUaWRhVUZtZ2VwQjhUVFJvSnVla3FBLTRfYmpTS05IT1l1LWlsdkt3R2xiaXFLZHFFNWVuMHNZRTgyWkRrT1VnRXdIWEhFbTF4MGdUT1ZWRG5xRWV2UWRzZjZhUWFYa1VlcVZVZTdsY0xtRDRzQVBzZERfamVBckRmOFlEdkxRRDcyUVB1a3dyLThJQ1g4Rjg5NEhzTHdGWVBzR1BxUUppcjVBVWhIa1F0ODBvZjMyakhfV0hUbmE5T2Q3dlhzaHRyVVB1SWxXS2FtZ2J1SXNmMTRwb1hBZ1luamRQNHowRnBNbnVOVzAtZ2d1Yk8yYUxjRkVRcUFlYjRPcFNCdlN2X2ZMMWRHVlBFNkRhSEVVczVramZYanFTWnB0QU1aSFVLSURSZGFYVmNkSGFncjNIMHQxLURDLUNLcTNKUEpXczZYZmRqUUtIaDdRZlh5RS1McEhHSGdEbzhqNlF5eGx2emFSSm9DTFlLc1hyVTl4dkFvcWlfYlJCVC1vSWwzTTlILTlFRHVPblRBNEFKNU9USVBieUYyUzlHZTl6dkJnSkxERTg4aHBzeGEtWUJYV203a0dkRmJuaGFLeTdFd0lLYzYydVpvWFp4ZXdzM3J3dDNQZGp5eGNMTEE3ZWh5c2Roa0REUnZoS3lhRFVkdXZZTXZCZUdtbmR3cUpwR0wxSkFVRnhvTzcza3NvdmRvSUdzSTd5Z0wtcEQ0Y2NPd3Jrdzh3M20xR1VwYk5DZ0VOdjBPdnY0dzc1VlFHWDJaLXQwMzZhcXhNeUhOdF9KalYydVpyUnZYbnU2M3kxNTNyWGhuRkViQWNkb3FPcE96Y2J6TFJpUi1Gb1hYaWltRjRtYkZYQTdzYUlqWVhUN01McmRVa0xNYXlQTHltZFNTY3o1UUdTNWVjMml0eWZHeEhGaHhydHdUbkJON09ORDlZaXNwVTE1R2hZLWU3MW1YTDB6ZzRRZnpTUzRSV09GRUpSZE1hSU03MjdRZTZ3UG15UDJBV3FrOHpfRC04c19nRjNtVjdDRDZ6ZXdld01kekllem51SDBOQzViNWhrcHAtRnlkUXVyX3hYWXBfOWJzUDl6VXY4STlqLVNHdjBhN292N2x6N3NUZmZHLVgyNFkyLTZfeTl3eDk1MF94WGNsV1c5ajAtNE8xTDE1NFpmb2Y1bU9tYXRkN0EyYWxkU3hoQk5oTFpxQXRqeWpfZTkyZ3ZnVjVBYjREMXUzcm0xdmU1YjNEQndJcmZ4WlVhVVdNNDVPcWlGdzV4U21yaWZ4T0kxbVkxQ1VDUW9XZVhHQWVPNHlSdEJGLVp3czZfYy0zUUk2T284WXVwd1VjTDh3ZzQ0bjBTUndFMExYdHhxNFhieWdab2lvU0NyOENIM3B2YlFGUGVBRzZEWE92dFVYMVBmdFdzV0VUSVcwTTBpY1RwNzZjZ29KbDRnbW9ldGJ2blhYS3FObWhCdXhocDloNDBaM1ZPTC0ycE0zZlVoUEhqZEhrM1ZPWFQwQ1dPWnAtaUdlc2kwaVQxSnZuc1BVZXJCdzkxbHJaY18xNVFNdk5heFRqVGg2cTNhdnN5QTFPOTQtOERud0Uzem1PNndlaktpMC1ONDVQSlV6azZsUW94LVBzWlNMRG0tMHU5R0kyQU5JMGx5WHByN3lzdE9ISDZNbjlScG54eGo4aUdOQndYcmd5U3JYMHN6ZWJkSktwZHprbGNjbUJBQTBZa0RYcldXVUlLblFlS1QzYmw1aHRDeU41cVQ0UjZBSjludE1LR2RISlZlcHJGNDJleks1ZTFiWVJaUlFsbnlORm15Yy1pd3U1Z1NWNE9ORUdSWmZURElMRlRQVV9hVTIwaGNhOVRXaG11aEQyXzg3OGtaLTFxc19xNmNzYV9GNnFfa3JKYmdfbFhPc3Z1em5EOXExTF9JV1hoRHpWcFBKM3RBb3dVNk9ZVjdoYVhzWGJ4NTNnVUlOa1BvME9lTEJ1V1B3SzdaLUZFVnlSb0kzaVhUcW5Nd2NkTkhJSTJWWWp6SVJmSHZ1STM5RTdpXzVfYVBodnBPTU93anEzaXRiZFBVTEU1eDJPV2RuMUZCdnBueVRId1FLU3NKLTlYbXN0SVFPRjk1YVkxeThhUW9TODVEZUVYOURzZHdwMTVndTZkM2RzR1pPV20yM1hHVERtcERid3hKWGRQem9YaDdsZGwyUkg5ZThPTlpiemN1WlBMNGtKbUhwM2U2d1ZYS3o2ZlZtRlVXSFo2MlZ6X2RwM05oNkdqbUlJZXVlUGRROE41TmdsN2RaWTJvOHZuT1dmOENJSmJmS0YyMUdRem1pdDJjdmE0Q2FyeFlMWlV4QjhGZ1ZjNUhXNzN4WjZsZXpuN2ZiSTNyelhnc2tSQS1tX1B0V0p1WGFCRUFZMHl2X2VLa1dIUmtNOXBMTm9RdjhmMUQ1U3NwSFFpRFdTc1hZeXVQcjhyc2syMngzZFNuQVQyWmtXRjJZVkNTOE9BLTdFNjhxSWNDOHlvQndwT0xsNkZRRlJKRnk4MHFzN3JpNXNIOTk5X1E4ai12V3RkVCIsIng1Y2UiOiJERUYifQ.eyJpYXQiOjE1OTM0NDgzNjI2ODUsImV4cCI6MTU5MzUzNDc2MjY4NSwianRpIjoiNjBjOTU3NzAtNTZkNy00YWUxLWE1NjItNzM1MGY1NjE1ZTI4IiwiYm9keSI6eyJkZXZpY2VJZCI6IjQyMWEzYWJjLWFjZmEtMTFlYS1iYjM3LTAyNDJhYzEzMDAwMiIsImRldmljZVR5cGUiOiJtYW5hZ2VkQ3ViaVR2IiwibXNvTmFtZSI6ImNhYmxlY28zIiwiaGFyZHdhcmVTZXJpYWxOdW1iZXIiOiJTTDIwMjAwNjEyMTUwMDAwIn19.SsibeogUFJHnBAgoY0X_yc0ODNVI_1OHMCZe03olVFoZ9eQ1WdSp0Th36YKJeu8WPhMO6uwP3p9PPxNUdz8uQWK9STWLOfNnhLwtDYXoV7VQbKFsy_AuY4TKOEKA7a7XrYP2Y8Ba1UgrwcAkC75PBthhPyyQNEmbjZ_pm_TgcKyCSo5GCEioCo_WgbdeIhZiZ-BeX74tJoPO-joM76y9WXRCzxQzXDcjmdDvvKKFwb-qi5oLihcpdu5SdaYd2sK4DTwR8e6QEVxnsUP3uqP_DwJUv9feJs3pkX9jzd90mxF5v0Y0ZGtlInvOwHlGU3exxVWthwt0aS1qpO9X7-1cMA_NG8ssStix4bQFcotw8sap8sc5SphXuUICdJRRZg</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="mind" elementType="Argument">
@@ -379,6 +384,11 @@
             <stringProp name="Argument.value">5058</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="anonBodyId" elementType="Argument">
+            <stringProp name="Argument.name">anonBodyId</stringProp>
+            <stringProp name="Argument.value">int:0500011C9950EE01</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -403,6 +413,10 @@
           <elementProp name="" elementType="Header">
             <stringProp name="Header.name">Authorization</stringProp>
             <stringProp name="Header.value">${authorization}</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">anonBodyId</stringProp>
+            <stringProp name="Header.value">${anonBodyId}</stringProp>
           </elementProp>
         </collectionProp>
       </HeaderManager>
@@ -5011,7 +5025,7 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
   &quot;queryId&quot;: &quot;5dasf2345701vgfs&quot;,&#xd;
   &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
   &quot;country&quot;: &quot;PAN&quot;,&#xd;
-  &quot;segment&quot;: &quot;FFFFF&quot;&#xd;
+  &quot;segment&quot;: &quot;FFFFF&quot;,&#xd;
   &quot;type&quot;: &quot;WTW_VIEW_DETAILS&quot;,&#xd;
   &quot;timestamp&quot;: 1591906757000&#xd;
   }&#xd;
@@ -5643,7 +5657,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
             <collectionProp name="Arguments.arguments">
               <elementProp name="keyword" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">A*</stringProp>
+                <stringProp name="Argument.value">Big Bang Theory</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">keyword</stringProp>
@@ -5691,7 +5705,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
             <collectionProp name="Arguments.arguments">
               <elementProp name="keyword" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">z*</stringProp>
+                <stringProp name="Argument.value">bang</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">keyword</stringProp>
@@ -6270,7 +6284,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. /v1/offers/{contentId}?providerId=&lt;array of providerId&gt;" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Movie Preview" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -6278,7 +6292,168 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/v1/offers/tivo:ct.332681338</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/movies/moviePreview/${movie_contentId}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Movie-May Also Like" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="itemId" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${movie_contentId}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">itemId</stringProp>
+              </elementProp>
+              <elementProp name="count" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">10</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">count</stringProp>
+              </elementProp>
+              <elementProp name="offset" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">offset</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/feedItems/carousels/moreLikeThis</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Content Preview" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/content/contentPreview/${episode_contentId}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Content-May Also Like" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="itemId" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${episode_contentId}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">itemId</stringProp>
+              </elementProp>
+              <elementProp name="count" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">10</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">count</stringProp>
+              </elementProp>
+              <elementProp name="offset" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">offset</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/feedItems/carousels/moreLikeThis</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Series Preview" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/series/seriesPreview/${series_contentId}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Series-May Also Like" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="itemId" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${episode_contentId}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">itemId</stringProp>
+              </elementProp>
+              <elementProp name="count" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">10</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">count</stringProp>
+              </elementProp>
+              <elementProp name="offset" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">offset</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/feedItems/carousels/moreLikeThis</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6290,7 +6465,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Mind" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Mind" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -6459,7 +6634,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="APS-Shared-Service" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="APS-Shared-Service" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -8186,7 +8361,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TempTest" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TempTest" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -8200,55 +8375,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="17&#x9;when type=PURCHASE" enabled="false">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">[&#xd;
-  {&#xd;
-  &quot;deviceType&quot;: &quot;managedCubiTv&quot;,&#xd;
-  &quot;product&quot;: &quot;CubiTv&quot;,&#xd;
-  &quot;itemId&quot;: &quot;tivo:ct.49457168&quot;,&#xd;
-  &quot;queryId&quot;: &quot;5dasf2345701vgfs&quot;,&#xd;
-  &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
-  &quot;country&quot;: &quot;USA&quot;,&#xd;
-  &quot;type&quot;: &quot;INVALID&quot;,&#xd;
-  &quot;timestamp&quot;: 1591906757000&#xd;
-  }&#xd;
-]</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/v1/implicitEvents</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code = 202      " enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="49588">202</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-            <boolProp name="Assertion.assume_success">true</boolProp>
-            <intProp name="Assertion.test_type">8</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="23. When airingStartTime = 10 days before startTime" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="20. (neg)when startTime=endTime" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -8263,13 +8390,13 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
   &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
   &quot;country&quot;: &quot;USA&quot;,&#xd;
   &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
-  &quot;startTime&quot;: ${startTime},&#xd;
-  &quot;endTime&quot;: ${endTime},&#xd;
-  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
+  &quot;startTime&quot;: ${now},&#xd;
+  &quot;endTime&quot;: ${now},&#xd;
+  &quot;airingStartTime&quot;: 1591898400000,&#xd;
   &quot;startOffset&quot;: 1396,&#xd;
   &quot;endOffset&quot;: 1800,&#xd;
-  &quot;contentDuration&quot;: 1800,&#xd;
   &quot;viewDuration&quot;: 399,&#xd;
+  &quot;contentDuration&quot;: 1800,&#xd;
   &quot;stationId&quot;: &quot;tivo:st.370200433&quot;,&#xd;
   &quot;vodProviderId&quot;: &quot;tivo:pt.1234&quot;&#xd;
   }&#xd;
@@ -8279,9 +8406,9 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.domain">${host_event_node}</stringProp>
+          <stringProp name="HTTPSampler.port">${host_event_port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/v1/deviceViewEvents</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -8302,19 +8429,16 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
-var min10 = 10 * 60 * 1000
-var day10 = 10 * 24 * 60 *  60 * 1000
+var min3 = 2 * 60 * 1000
+var min1 = 1 * 60 * 1000
 vars.put(&quot;now&quot;,now.toString());
-vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
-vars.put(&quot;startTime&quot;,       now.toString());
-vars.put(&quot;endTime&quot;,         (now + min10).toString());
 </stringProp>
             <stringProp name="scriptLanguage">groovy</stringProp>
           </JSR223PreProcessor>
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="49588">202</stringProp>
+              <stringProp name="51508">400</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>

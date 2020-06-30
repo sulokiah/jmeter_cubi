@@ -211,7 +211,7 @@
           </elementProp>
           <elementProp name="authorization" elementType="Argument">
             <stringProp name="Argument.name">authorization</stringProp>
-            <stringProp name="Argument.value">eyJkb21haW4iOiJjYWJsZWNvMy1kYnMiLCJ0b2tlbiI6IjJDTThvb29Nbm9KWnRJS2RnTG5Eem9VYW52RDBmeE1vTkZvaWxxN1NscFIxbTEwcnhvOWUzR0tVdEhUNjFraVJ6U1VOVzBxZTdiUi5OaWlZTl96S3k1ZHVVcnJEZ1gzMXhnYXpYUHNwLk1ueEJNLnJ0RW9QUE5DNmkuS0s3ZlVrX1ZGRWhEcFd1Qy5VelF0cVkwNnQwZ29hR0V1Tjc3VmloRC5id3V1bVhndGF5cXRvT0QxR1lfb29pSVBhV3Q2V1RoS0FzR0VJNE8uWi5ZREJHUERVQUlDV05OekVNOVVMa1BMYzR1U3gySDh1R19vS3ZILkhHVkxLYTBndzJfTUtKcWxSYWZGMngzb3hUcl9wRWNuQ1kwTThHZVhpcm9MUCIsInR5cGUiOiJkb21haW5Ub2tlbiJ9</stringProp>
+            <stringProp name="Argument.value">eyJkb21haW4iOiJjYWJsZWNvMy1kYnMiLCJ0b2tlbiI6IjZ1WWxndGtkSGZYNThfVlp4c2ZpaDNMU28uMDZOalh5bVJhdGlwT254ZWJpcDVPM2V0ZF9PZXlreXdTWFVINDRvcUQ2N0xFT09rcm45cmhhQUUzaGtPV3B2OHVPbXlZQUdBZ0V6M2sxRm9ERlU5QUprYzUuTHFnUndhU3BLekE3UGRLSlNsbGxqRjdsUUVoaDI2Y3ZvWkVFdnFsaHRjbktISnhQWGdKczQ0UzV0ZTh2VXE0WS5ZczJzakMyMjNOVjI0dkJtQ3NQV0ZfN1NvOFl3UTM3Z0ZDdzFMa3BjdGdrUF92eDFESk9iaU1NTjY2OGFQRnlkOGJHc3hIRW5aUXAyUTYuanRhUnR5bnBjSF9NcjRlVkdRSHNIVHA4Lks4VCIsInR5cGUiOiJkb21haW5Ub2tlbiJ9</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="host_disc" elementType="Argument">
@@ -286,7 +286,7 @@
           </elementProp>
           <elementProp name="anonBodyId" elementType="Argument">
             <stringProp name="Argument.name">anonBodyId</stringProp>
-            <stringProp name="Argument.value">int:0500014A3F43F3F0</stringProp>
+            <stringProp name="Argument.value">int:0500011C9950EE01</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="movie_contentId" elementType="Argument">
@@ -458,7 +458,7 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="deviceViewEvents" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="deviceViewEvents" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -472,6 +472,10 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <stringProp name="ConstantTimer.delay">1000</stringProp>
+        </ConstantTimer>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. /v1/deviceViewEvents" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -1379,6 +1383,9 @@
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 vars.put(&quot;now&quot;,now.toString());
 var min2 = 2 * 60 * 1000
 vars.put(&quot;startTime&quot;,(now - min2).toString());
@@ -1509,6 +1516,8 @@ vars.put(&quot;endTime&quot;  ,now.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
 vars.put(&quot;now&quot;,now.toString());
 var min3 = 2 * 60 * 1000
 var min1 = 1 * 60 * 1000
@@ -1640,6 +1649,9 @@ vars.put(&quot;endTime&quot;  ,(now - min1).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min3 = 2 * 60 * 1000
 var min1 = 1 * 60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -1649,7 +1661,7 @@ vars.put(&quot;now&quot;,now.toString());
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="51508">400</stringProp>
+              <stringProp name="49588">202</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -1712,6 +1724,9 @@ vars.put(&quot;now&quot;,now.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;startTime&quot;,(now + min10).toString());
@@ -1785,6 +1800,9 @@ vars.put(&quot;endTime&quot;,   now.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, now.toString());
@@ -1859,6 +1877,9 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -1934,8 +1955,11 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
-var day10 = 10 24 * 60 *  60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now + day10).toString());
 vars.put(&quot;startTime&quot;,       now.toString());
@@ -2008,6 +2032,9 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now + day10).toString());
@@ -2081,6 +2108,9 @@ vars.put(&quot;endTime&quot;,         (now.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now + day10).toString());
@@ -2155,8 +2185,11 @@ vars.put(&quot;endTime&quot;,         (now.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
-var day10 = 10 24 * 60 *  60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
 vars.put(&quot;startTime&quot;,       now.toString());
@@ -2230,8 +2263,11 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
-var day10 = 10 24 * 60 *  60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
 vars.put(&quot;startTime&quot;,       now.toString());
@@ -2305,8 +2341,11 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
-var day10 = 10 24 * 60 *  60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
 vars.put(&quot;startTime&quot;,       now.toString());
@@ -2380,6 +2419,9 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -2455,6 +2497,9 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -2530,8 +2575,11 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
-var day10 = 10 24 * 60 *  60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
 vars.put(&quot;startTime&quot;,       (now + day10).toString());
@@ -2605,8 +2653,11 @@ vars.put(&quot;endTime&quot;,         now.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
-var day10 = 10 24 * 60 *  60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
 vars.put(&quot;startTime&quot;,       (now).toString());
@@ -2680,8 +2731,11 @@ vars.put(&quot;endTime&quot;,         (now + 1800).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
-var day10 = 10 24 * 60 *  60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
 vars.put(&quot;startTime&quot;,       (now).toString());
@@ -2755,6 +2809,9 @@ vars.put(&quot;endTime&quot;,         (now + 1800).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -2830,6 +2887,9 @@ vars.put(&quot;endTime&quot;,         (now + 1800).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -2905,8 +2965,11 @@ vars.put(&quot;endTime&quot;,         (now + 1800).toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
-var day10 = 10 24 * 60 *  60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
 var startTime = now
@@ -2915,7 +2978,7 @@ var endTime   = now + 1800
 var viewDuration = 3600 
 vars.put(&quot;startTime&quot;,       startTime.toString());
 vars.put(&quot;endTime&quot;,         endTime.toString());
-vars.put(&quot;viewDuration&quot;,    viewDuration);
+vars.put(&quot;viewDuration&quot;,    viewDuration.toString());
 </stringProp>
             <stringProp name="scriptLanguage">groovy</stringProp>
           </JSR223PreProcessor>
@@ -2985,6 +3048,9 @@ vars.put(&quot;viewDuration&quot;,    viewDuration);
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -3061,15 +3127,18 @@ vars.put(&quot;viewDuration&quot;,    3600);
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
-var day10 = 10 24 * 60 *  60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
 vars.put(&quot;startTime&quot;,       (now).toString());
 vars.put(&quot;endTime&quot;,         (now + 1800).toString());
 
 var contentDuration = 		3600
-var viewDuration = 1.7 * contentDuration
+var viewDuration = (int) 1.7 * contentDuration
 
 vars.put(&quot;contentDuration&quot;,	contentDuration.toString());
 vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
@@ -3142,6 +3211,9 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -3224,8 +3296,11 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
-var day10 = 10 24 * 60 *  60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
 vars.put(&quot;startTime&quot;,       (now).toString());
@@ -3306,6 +3381,9 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -3388,6 +3466,9 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -3470,6 +3551,9 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -3552,6 +3636,9 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -3634,6 +3721,9 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -3716,6 +3806,9 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -3798,6 +3891,12 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -3880,6 +3979,9 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -3963,6 +4065,9 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -4046,6 +4151,9 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -4085,14 +4193,13 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
   &quot;deviceType&quot;: &quot;managedCubiTv&quot;,&#xd;
   &quot;product&quot;: &quot;CubiTv&quot;,&#xd;
   &quot;itemId&quot;: &quot;tivo:ct.49457168&quot;,&#xd;
-  &quot;queryId&quot;: &quot;queryid1&quot;,&#xd;
-  &quot;utcOffset&quot;: &quot;-2400&quot;,&#xd;
+  &quot;queryId&quot;: &quot;queryid_1&quot;,&#xd;
+  &quot;utcOffset&quot;: &quot;-600&quot;,&#xd;
   &quot;country&quot;: &quot;USA&quot;,&#xd;
-  &quot;segment&quot;: &quot;INVALID&quot;,  &#xd;
   &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
-  &quot;startTime&quot;: 1591898400000,&#xd;
-  &quot;endTime&quot;: 1591900200000,&#xd;
-  &quot;airingStartTime&quot;: 1591898400000,&#xd;
+  &quot;startTime&quot;: ${startTime},&#xd;
+  &quot;endTime&quot;: ${endTime},&#xd;
+  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
   &quot;startOffset&quot;: 1396,&#xd;
   &quot;endOffset&quot;: 1800,&#xd;
   &quot;contentDuration&quot;: 1800,&#xd;
@@ -4104,14 +4211,14 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
   &quot;deviceType&quot;: &quot;managedCubiTv&quot;,&#xd;
   &quot;product&quot;: &quot;CubiTv&quot;,&#xd;
   &quot;itemId&quot;: &quot;tivo:ct.49457168&quot;,&#xd;
-  &quot;queryId&quot;: &quot;queryid2&quot;,&#xd;
-  &quot;utcOffset&quot;: &quot;-2400&quot;,&#xd;
+  &quot;queryId&quot;: &quot;queryid_2&quot;,&#xd;
+  &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
   &quot;country&quot;: &quot;USA&quot;,&#xd;
   &quot;segment&quot;: &quot;INVALID&quot;,  &#xd;
   &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
-  &quot;startTime&quot;: 1591898400000,&#xd;
-  &quot;endTime&quot;: 1591900200000,&#xd;
-  &quot;airingStartTime&quot;: 1591898400000,&#xd;
+  &quot;startTime&quot;: ${startTime},&#xd;
+  &quot;endTime&quot;: ${endTime},&#xd;
+  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
   &quot;startOffset&quot;: 1396,&#xd;
   &quot;endOffset&quot;: 1800,&#xd;
   &quot;contentDuration&quot;: 1800,&#xd;
@@ -4149,8 +4256,11 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
-var day10 = 10 24 * 60 *  60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
 vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
 vars.put(&quot;startTime&quot;,       (now).toString());
@@ -4192,6 +4302,10 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <stringProp name="ConstantTimer.delay">1000</stringProp>
+        </ConstantTimer>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. POST /v1/implicitEvents" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -4619,6 +4733,9 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -4692,6 +4809,10 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -4765,6 +4886,10 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -4838,6 +4963,10 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+
 var min10 = 10 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
@@ -5489,6 +5618,10 @@ vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+
 vars.put(&quot;now&quot;,now.toString());
 var min2 = 2 * 60 * 1000
 vars.put(&quot;startTime&quot;,(now - min2).toString());
@@ -5553,6 +5686,10 @@ vars.put(&quot;endTime&quot;  ,now.toString());
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+
 vars.put(&quot;now&quot;,now.toString());
 var min2 = 2 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
@@ -5617,6 +5754,10 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+
 vars.put(&quot;now&quot;,now.toString());
 var min2 = 2 * 60 * 1000
 var day10 = 10 24 * 60 *  60 * 1000
@@ -6465,7 +6606,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Mind" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Mind" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -8361,7 +8502,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TempTest" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TempTest" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -8375,7 +8516,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="20. (neg)when startTime=endTime" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="23. When airingStartTime = 10 days before startTime" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -8390,13 +8531,13 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
   &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
   &quot;country&quot;: &quot;USA&quot;,&#xd;
   &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
-  &quot;startTime&quot;: ${now},&#xd;
-  &quot;endTime&quot;: ${now},&#xd;
-  &quot;airingStartTime&quot;: 1591898400000,&#xd;
+  &quot;startTime&quot;: ${startTime},&#xd;
+  &quot;endTime&quot;: ${endTime},&#xd;
+  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
   &quot;startOffset&quot;: 1396,&#xd;
   &quot;endOffset&quot;: 1800,&#xd;
-  &quot;viewDuration&quot;: 399,&#xd;
   &quot;contentDuration&quot;: 1800,&#xd;
+  &quot;viewDuration&quot;: 399,&#xd;
   &quot;stationId&quot;: &quot;tivo:st.370200433&quot;,&#xd;
   &quot;vodProviderId&quot;: &quot;tivo:pt.1234&quot;&#xd;
   }&#xd;
@@ -8406,9 +8547,9 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${host_event_node}</stringProp>
-          <stringProp name="HTTPSampler.port">${host_event_port}</stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/v1/deviceViewEvents</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -8429,9 +8570,93 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
 
 Instant instant = Instant.now();
 var now=instant.toEpochMilli();
-var min3 = 2 * 60 * 1000
-var min1 = 1 * 60 * 1000
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+var min10 = 10 * 60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
 vars.put(&quot;now&quot;,now.toString());
+vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
+vars.put(&quot;startTime&quot;,       now.toString());
+vars.put(&quot;endTime&quot;,         (now + min10).toString());
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49588">202</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="29&#x9;(neg)when startOffset &gt; contentDuration" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">[&#xd;
+ {&#xd;
+  &quot;deviceType&quot;: &quot;managedCubiTv&quot;,&#xd;
+  &quot;product&quot;: &quot;CubiTv&quot;,&#xd;
+  &quot;itemId&quot;: &quot;tivo:ct.49457168&quot;,&#xd;
+  &quot;queryId&quot;: &quot;5dasf2345701vgfs&quot;,&#xd;
+  &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
+  &quot;country&quot;: &quot;USA&quot;,&#xd;
+  &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
+  &quot;startTime&quot;: ${startTime},&#xd;
+  &quot;endTime&quot;: ${endTime},&#xd;
+  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
+  &quot;startOffset&quot;: 3600,&#xd;
+  &quot;endOffset&quot;: 1800,&#xd;
+  &quot;contentDuration&quot;: 1800,&#xd;
+  &quot;viewDuration&quot;: 399,&#xd;
+  &quot;stationId&quot;: &quot;tivo:st.370200433&quot;,&#xd;
+  &quot;vodProviderId&quot;: &quot;tivo:pt.1234&quot;&#xd;
+  }&#xd;
+]&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/deviceViewEvents</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">import java.time.Instant
+
+Instant instant = Instant.now();
+var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+var min10 = 10 * 60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
+vars.put(&quot;now&quot;,now.toString());
+vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
+vars.put(&quot;startTime&quot;,       now.toString());
+vars.put(&quot;endTime&quot;,         (now + min10).toString());
 </stringProp>
             <stringProp name="scriptLanguage">groovy</stringProp>
           </JSR223PreProcessor>
@@ -8439,6 +8664,248 @@ vars.put(&quot;now&quot;,now.toString());
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="51508">400</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="33&#x9;(neg) when endOffset &gt; (contentDuration)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">[&#xd;
+ {&#xd;
+  &quot;deviceType&quot;: &quot;managedCubiTv&quot;,&#xd;
+  &quot;product&quot;: &quot;CubiTv&quot;,&#xd;
+  &quot;itemId&quot;: &quot;tivo:ct.49457168&quot;,&#xd;
+  &quot;queryId&quot;: &quot;5dasf2345701vgfs&quot;,&#xd;
+  &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
+  &quot;country&quot;: &quot;USA&quot;,&#xd;
+  &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
+  &quot;startTime&quot;: ${startTime},&#xd;
+  &quot;endTime&quot;: ${endTime},&#xd;
+  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
+  &quot;startOffset&quot;: 1396,&#xd;
+  &quot;endOffset&quot;: 3600,&#xd;
+  &quot;contentDuration&quot;: 1800,&#xd;
+  &quot;viewDuration&quot;: 399,&#xd;
+  &quot;stationId&quot;: &quot;tivo:st.370200433&quot;,&#xd;
+  &quot;vodProviderId&quot;: &quot;tivo:pt.1234&quot;&#xd;
+  }&#xd;
+]&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/deviceViewEvents</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">import java.time.Instant
+
+Instant instant = Instant.now();
+var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+var min10 = 10 * 60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
+vars.put(&quot;now&quot;,now.toString());
+vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
+vars.put(&quot;startTime&quot;,       (now).toString());
+vars.put(&quot;endTime&quot;,         (now + 1800).toString());
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="51508">400</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="34&#x9;when viewDuration = 30 seconds and contentDuration=30mins" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">[&#xd;
+ {&#xd;
+  &quot;deviceType&quot;: &quot;managedCubiTv&quot;,&#xd;
+  &quot;product&quot;: &quot;CubiTv&quot;,&#xd;
+  &quot;itemId&quot;: &quot;tivo:ct.49457168&quot;,&#xd;
+  &quot;queryId&quot;: &quot;5dasf2345701vgfs&quot;,&#xd;
+  &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
+  &quot;country&quot;: &quot;USA&quot;,&#xd;
+  &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
+  &quot;startTime&quot;: ${startTime},&#xd;
+  &quot;endTime&quot;: ${endTime},&#xd;
+  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
+  &quot;startOffset&quot;: 1396,&#xd;
+  &quot;endOffset&quot;: 1800,&#xd;
+  &quot;contentDuration&quot;: 1800,&#xd;
+  &quot;viewDuration&quot;: 30,&#xd;
+  &quot;stationId&quot;: &quot;tivo:st.370200433&quot;,&#xd;
+  &quot;vodProviderId&quot;: &quot;tivo:pt.1234&quot;&#xd;
+  }&#xd;
+]&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/deviceViewEvents</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">import java.time.Instant
+
+Instant instant = Instant.now();
+var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+var min10 = 10 * 60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
+vars.put(&quot;now&quot;,now.toString());
+vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
+vars.put(&quot;startTime&quot;,       (now).toString());
+vars.put(&quot;endTime&quot;,         (now + 1800).toString());
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49588">202</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="41&#x9;when portionViewed= 0&#x9;" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">[&#xd;
+ {&#xd;
+  &quot;deviceType&quot;: &quot;managedCubiTv&quot;,&#xd;
+  &quot;product&quot;: &quot;CubiTv&quot;,&#xd;
+  &quot;itemId&quot;: &quot;tivo:ct.49457168&quot;,&#xd;
+  &quot;queryId&quot;: &quot;5dasf2345701vgfs&quot;,&#xd;
+  &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
+  &quot;country&quot;: &quot;USA&quot;,&#xd;
+  &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
+  &quot;startTime&quot;: ${startTime},&#xd;
+  &quot;endTime&quot;: ${endTime},&#xd;
+  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
+  &quot;startOffset&quot;: 1396,&#xd;
+  &quot;endOffset&quot;: 3600,&#xd;
+  &quot;contentDuration&quot;: ${contentDuration},&#xd;
+  &quot;viewDuration&quot;: ${viewDuration},&#xd;
+  &quot;portionViewed&quot;: 0&#xd;
+  &quot;stationId&quot;: &quot;tivo:st.370200433&quot;,&#xd;
+  &quot;vodProviderId&quot;: &quot;tivo:pt.1234&quot;&#xd;
+  }&#xd;
+]&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/deviceViewEvents</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">import java.time.Instant
+
+Instant instant = Instant.now();
+var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+var min10 = 10 * 60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
+vars.put(&quot;now&quot;,now.toString());
+vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
+vars.put(&quot;startTime&quot;,       (now).toString());
+vars.put(&quot;endTime&quot;,         (now + 1800).toString());
+
+var contentDuration = 3600
+var viewDuration = 1.7 * contentDuration
+
+
+vars.put(&quot;contentDuration&quot;,	contentDuration.toString());
+vars.put(&quot;viewDuration&quot;,    	viewDuration.toString());
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49588">202</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>

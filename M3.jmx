@@ -12,7 +12,7 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="usqe1" enabled="true">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="usqe1" enabled="false">
         <collectionProp name="Arguments.arguments">
           <elementProp name="aps" elementType="Argument">
             <stringProp name="Argument.name">aps</stringProp>
@@ -26,7 +26,7 @@
           </elementProp>
           <elementProp name="authorization" elementType="Argument">
             <stringProp name="Argument.name">authorization</stringProp>
-            <stringProp name="Argument.value">eyJkb21haW4iOiJjYWJsZWNvMy1kYnMiLCJ0b2tlbiI6IjlzeHpHM2RTdy45WnVFQzR4Y0NNSmpGdEwuUWV5eTNfSGVUV3NMNXVnWlkybG84T2cwY3BBWXpacHJ5QVVDMFlwMlhaN2tXWHd3Ukg2VGs4T3YyNnZVbDFDUWhKU2JkR0wyMThXMGZ6U0ZYeUY4NFpZLmZoeXk0cTlxeE1xTEtiV3FtRHNWS3FJMDF6MTVjVjF2blJ3QTdLXzBBNng1akJYelhsQmd0X09mbkpBX1RBSzZnOUlxd3JJQnlrYzBMcGlneDlSZjJvQ1FOUFFNdjJmZ1ZxdC56dTdSVnpPSjY3MEhKVmI2NDlMYVk1REFoZU44OHNpNFl1bVFSYjBtVXhqNThzVVh6d1hIYzhkUnVZVnVKTUFoUTE1SUlrNlVUMiIsInR5cGUiOiJkb21haW5Ub2tlbiJ9</stringProp>
+            <stringProp name="Argument.value">eyJkb21haW4iOiJjYWJsZWNvMy1kYnMiLCJ0b2tlbiI6IjNwN1dTZGRLZVZhSHVIbmg5VVI2aWtGcmtZZkk4TWVMZFQ4Ukc1M3dWTTRLUjFsb2NodWZMbTNELlI3Vm9OZWhTSi5INmN5RGNINlZoZDk5RnFCZWJPQ19DZVo3a0xEU0RaN3dwTUZidHlNZ0hvNVZNSUtzazlnaG5TRUVHTmlaX2VUTGRFUzZZb2FfNzRJWVpfSE9kWlFvNHRGY2Z6QjZvYy5UdDJFZE5kcVZ6WE5qVVRxZEFZb3JSeGdsSko2dGJZY2dWYk1VRlVscVJPSWhjellOMUdrdzcuaG5HS09jelpjd1R0YTJIMXU0WE9mZGFGTHhuN1JuQ3dDWGhZLldWakJtS0dMWnNkcWhmNFdJRjZLZDdYdHpOSFF2aFlxUyIsInR5cGUiOiJkb21haW5Ub2tlbiJ9</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="discovery_host" elementType="Argument">
@@ -202,7 +202,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="cdvrqe1" enabled="false">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="cdvrqe1" enabled="true">
         <collectionProp name="Arguments.arguments">
           <elementProp name="aps" elementType="Argument">
             <stringProp name="Argument.name">aps</stringProp>
@@ -216,7 +216,7 @@
           </elementProp>
           <elementProp name="authorization" elementType="Argument">
             <stringProp name="Argument.name">authorization</stringProp>
-            <stringProp name="Argument.value">eyJkb21haW4iOiJjYWJsZWNvMy1kYnMiLCJ0b2tlbiI6IjFVOWVacVBhMVVDSXBETTV6WkZqOUtEQnNUMnQ2ZmxoaVNqRlMzRlRjdmRLRVdfeFhMTDc2R09BT2JNS25LQVVxNENnZERiN1o5Mkl3VzN6U3hjNHdINHBoZGYxSEk3XzV1dk5ob0pqQXRibnh2dTlGUzVsZ2lDSlhhaXVkdUxfbVgzdnNySHhTTFYzZS5NRWx0RzE2ckYyYzhXeWV2aGFtZURXbDlsS09BSlU5akFFQWU5ellhak5ob3hFOEVMd29MaGJYVkdmenEuZ2JGNHRiTFNLZms4VGtXMFZrWDNZX3hsS3dCZkNlaVJfTy4uNWN4MnJxcFpvNVVmV2o3SDV3M29Uc2JUYjhkbTFRMXFmeWdXbVlqMVJtSHhYaUlwSyIsInR5cGUiOiJkb21haW5Ub2tlbiJ9</stringProp>
+            <stringProp name="Argument.value">eyJkb21haW4iOiJjYWJsZWNvMy1kYnMiLCJ0b2tlbiI6IkJXYTdmSk5yb1NpUXBqdkRBQjBqVnhsVXBzcC5PQkk4c1F1bDRHc3hCNXBublVSbUMzQlFhck5rTVAyS3FHZTdTNGswdThHOWxCb3E1SS5kWFVUNUZVTW1PdWdJTjhkTHJqMXpRRURhMUdRU3hpX0JrR3VHR3FhOGtDWVlRaXptZlh2X3ZCUk9OTWxHbk9PQ0laLkl1VHRPQUZXc2FIMUU5V1AxbFdmc2lBYlo1SkRIU09IUU02cm1MNEJ5RVNDVUd1SGpjSzdwVGxybzhRZG9NazUxSVVFc2hkOWNIYlYuY09PS3JZQ2hGNHZPamc2allad2FpVWxwWWNnVWU0NWQ4NmhsZ1hPcVg1YWpkeVZDS1NtSE42TFpHR19KWklpTCIsInR5cGUiOiJkb21haW5Ub2tlbiJ9</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="host_disc" elementType="Argument">
@@ -498,7 +498,7 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Channels" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Channels" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -738,7 +738,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Preview Pane" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Preview Pane" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -752,7 +752,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Movie Preview" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Movie Preview" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -812,7 +812,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Content Preview" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Content Preview" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -872,7 +872,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Series Preview" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Series Preview" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -933,7 +933,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Detail-SeariesDetail" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Detail-SeariesDetail" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1043,7 +1043,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -6966,7 +6966,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -8936,34 +8936,29 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="23. When airingStartTime = 10 days before startTime" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Content-May Also Like" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
+              <elementProp name="itemId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">[&#xd;
- {&#xd;
-  &quot;deviceType&quot;: &quot;managedCubiTv&quot;,&#xd;
-  &quot;product&quot;: &quot;CubiTv&quot;,&#xd;
-  &quot;itemId&quot;: &quot;tivo:ct.49457168&quot;,&#xd;
-  &quot;queryId&quot;: &quot;5dasf2345701vgfs&quot;,&#xd;
-  &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
-  &quot;country&quot;: &quot;USA&quot;,&#xd;
-  &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
-  &quot;startTime&quot;: ${startTime},&#xd;
-  &quot;endTime&quot;: ${endTime},&#xd;
-  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
-  &quot;startOffset&quot;: 1396,&#xd;
-  &quot;endOffset&quot;: 1800,&#xd;
-  &quot;contentDuration&quot;: 1800,&#xd;
-  &quot;viewDuration&quot;: 399,&#xd;
-  &quot;stationId&quot;: &quot;tivo:st.370200433&quot;,&#xd;
-  &quot;vodProviderId&quot;: &quot;tivo:pt.1234&quot;&#xd;
-  }&#xd;
-]&#xd;
-</stringProp>
+                <stringProp name="Argument.value">${series_contentId}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">itemId</stringProp>
+              </elementProp>
+              <elementProp name="count" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">10</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">count</stringProp>
+              </elementProp>
+              <elementProp name="offset" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">offset</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
@@ -8971,8 +8966,8 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/v1/deviceViewEvents</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/feedItems/carousels/moreLikeThis</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -8981,76 +8976,17 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="script">import java.time.Instant
-
-Instant instant = Instant.now();
-var now=instant.toEpochMilli();
-var hours2 = 2 * 60 * 60 * 1000
-now = now - hours2
-
-var min10 = 10 * 60 * 1000
-var day10 = 10 * 24 * 60 *  60 * 1000
-vars.put(&quot;now&quot;,now.toString());
-vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
-vars.put(&quot;startTime&quot;,       now.toString());
-vars.put(&quot;endTime&quot;,         (now + min10).toString());
-</stringProp>
-            <stringProp name="scriptLanguage">groovy</stringProp>
-          </JSR223PreProcessor>
-          <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="49588">202</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-            <boolProp name="Assertion.assume_success">true</boolProp>
-            <intProp name="Assertion.test_type">8</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="29&#x9;(neg)when startOffset &gt; contentDuration" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">[&#xd;
- {&#xd;
-  &quot;deviceType&quot;: &quot;managedCubiTv&quot;,&#xd;
-  &quot;product&quot;: &quot;CubiTv&quot;,&#xd;
-  &quot;itemId&quot;: &quot;tivo:ct.49457168&quot;,&#xd;
-  &quot;queryId&quot;: &quot;5dasf2345701vgfs&quot;,&#xd;
-  &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
-  &quot;country&quot;: &quot;USA&quot;,&#xd;
-  &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
-  &quot;startTime&quot;: ${startTime},&#xd;
-  &quot;endTime&quot;: ${endTime},&#xd;
-  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
-  &quot;startOffset&quot;: 3600,&#xd;
-  &quot;endOffset&quot;: 1800,&#xd;
-  &quot;contentDuration&quot;: 1800,&#xd;
-  &quot;viewDuration&quot;: 399,&#xd;
-  &quot;stationId&quot;: &quot;tivo:st.370200433&quot;,&#xd;
-  &quot;vodProviderId&quot;: &quot;tivo:pt.1234&quot;&#xd;
-  }&#xd;
-]&#xd;
-</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. Content Preview" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.domain">${aps}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/v1/deviceViewEvents</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/content/contentPreview/tivo:cl.ts.86266862</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -9059,195 +8995,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="script">import java.time.Instant
-
-Instant instant = Instant.now();
-var now=instant.toEpochMilli();
-var hours2 = 2 * 60 * 60 * 1000
-now = now - hours2
-
-var min10 = 10 * 60 * 1000
-var day10 = 10 * 24 * 60 *  60 * 1000
-vars.put(&quot;now&quot;,now.toString());
-vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
-vars.put(&quot;startTime&quot;,       now.toString());
-vars.put(&quot;endTime&quot;,         (now + min10).toString());
-</stringProp>
-            <stringProp name="scriptLanguage">groovy</stringProp>
-          </JSR223PreProcessor>
-          <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="51508">400</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-            <boolProp name="Assertion.assume_success">true</boolProp>
-            <intProp name="Assertion.test_type">8</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="33&#x9;(neg) when endOffset &gt; (contentDuration)" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">[&#xd;
- {&#xd;
-  &quot;deviceType&quot;: &quot;managedCubiTv&quot;,&#xd;
-  &quot;product&quot;: &quot;CubiTv&quot;,&#xd;
-  &quot;itemId&quot;: &quot;tivo:ct.49457168&quot;,&#xd;
-  &quot;queryId&quot;: &quot;5dasf2345701vgfs&quot;,&#xd;
-  &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
-  &quot;country&quot;: &quot;USA&quot;,&#xd;
-  &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
-  &quot;startTime&quot;: ${startTime},&#xd;
-  &quot;endTime&quot;: ${endTime},&#xd;
-  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
-  &quot;startOffset&quot;: 1396,&#xd;
-  &quot;endOffset&quot;: 3600,&#xd;
-  &quot;contentDuration&quot;: 1800,&#xd;
-  &quot;viewDuration&quot;: 399,&#xd;
-  &quot;stationId&quot;: &quot;tivo:st.370200433&quot;,&#xd;
-  &quot;vodProviderId&quot;: &quot;tivo:pt.1234&quot;&#xd;
-  }&#xd;
-]&#xd;
-</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/v1/deviceViewEvents</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="script">import java.time.Instant
-
-Instant instant = Instant.now();
-var now=instant.toEpochMilli();
-var hours2 = 2 * 60 * 60 * 1000
-now = now - hours2
-
-var min10 = 10 * 60 * 1000
-var day10 = 10 * 24 * 60 *  60 * 1000
-vars.put(&quot;now&quot;,now.toString());
-vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
-vars.put(&quot;startTime&quot;,       (now).toString());
-vars.put(&quot;endTime&quot;,         (now + 1800).toString());
-</stringProp>
-            <stringProp name="scriptLanguage">groovy</stringProp>
-          </JSR223PreProcessor>
-          <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="51508">400</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-            <boolProp name="Assertion.assume_success">true</boolProp>
-            <intProp name="Assertion.test_type">8</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="34&#x9;when viewDuration = 30 seconds and contentDuration=30mins" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">[&#xd;
- {&#xd;
-  &quot;deviceType&quot;: &quot;managedCubiTv&quot;,&#xd;
-  &quot;product&quot;: &quot;CubiTv&quot;,&#xd;
-  &quot;itemId&quot;: &quot;tivo:ct.49457168&quot;,&#xd;
-  &quot;queryId&quot;: &quot;5dasf2345701vgfs&quot;,&#xd;
-  &quot;utcOffset&quot;: &quot;-0600&quot;,&#xd;
-  &quot;country&quot;: &quot;USA&quot;,&#xd;
-  &quot;type&quot;: &quot;LINEAR&quot;,&#xd;
-  &quot;startTime&quot;: ${startTime},&#xd;
-  &quot;endTime&quot;: ${endTime},&#xd;
-  &quot;airingStartTime&quot;: ${airingStartTime},&#xd;
-  &quot;startOffset&quot;: 1396,&#xd;
-  &quot;endOffset&quot;: 1800,&#xd;
-  &quot;contentDuration&quot;: 1800,&#xd;
-  &quot;viewDuration&quot;: 30,&#xd;
-  &quot;stationId&quot;: &quot;tivo:st.370200433&quot;,&#xd;
-  &quot;vodProviderId&quot;: &quot;tivo:pt.1234&quot;&#xd;
-  }&#xd;
-]&#xd;
-</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/v1/deviceViewEvents</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="script">import java.time.Instant
-
-Instant instant = Instant.now();
-var now=instant.toEpochMilli();
-var hours2 = 2 * 60 * 60 * 1000
-now = now - hours2
-
-var min10 = 10 * 60 * 1000
-var day10 = 10 * 24 * 60 *  60 * 1000
-vars.put(&quot;now&quot;,now.toString());
-vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
-vars.put(&quot;startTime&quot;,       (now).toString());
-vars.put(&quot;endTime&quot;,         (now + 1800).toString());
-</stringProp>
-            <stringProp name="scriptLanguage">groovy</stringProp>
-          </JSR223PreProcessor>
-          <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="49588">202</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-            <boolProp name="Assertion.assume_success">true</boolProp>
-            <intProp name="Assertion.test_type">8</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
       </hashTree>
     </hashTree>
   </hashTree>

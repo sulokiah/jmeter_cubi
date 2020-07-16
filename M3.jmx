@@ -369,13 +369,13 @@
             <stringProp name="Argument.value">/mind/mind39</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="aps_persistent" elementType="Argument">
-            <stringProp name="Argument.name">aps_persistent</stringProp>
+          <elementProp name="REMOVE aps_persistent" elementType="Argument">
+            <stringProp name="Argument.name">REMOVE aps_persistent</stringProp>
             <stringProp name="Argument.value">aps-persistent-shared-api-ts-latest-01.tea2.tivo.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="aps_persistent_port" elementType="Argument">
-            <stringProp name="Argument.name">aps_persistent_port</stringProp>
+          <elementProp name="REMOVE aps_persistent_port" elementType="Argument">
+            <stringProp name="Argument.name">REMOVE aps_persistent_port</stringProp>
             <stringProp name="Argument.value">40304</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -402,6 +402,51 @@
           <elementProp name="anonBodyId" elementType="Argument">
             <stringProp name="Argument.name">anonBodyId</stringProp>
             <stringProp name="Argument.value">int:0500011C9950EE01</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NEWLYADDED" elementType="Argument">
+            <stringProp name="Argument.name">NEWLYADDED</stringProp>
+            <stringProp name="Argument.value">===============</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="provisioning_host" elementType="Argument">
+            <stringProp name="Argument.name">provisioning_host</stringProp>
+            <stringProp name="Argument.value">aps-provisioning-ts-latest-01.tea2.tivo.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="provisioning_port" elementType="Argument">
+            <stringProp name="Argument.name">provisioning_port</stringProp>
+            <stringProp name="Argument.value">40288</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="events_host" elementType="Argument">
+            <stringProp name="Argument.name">events_host</stringProp>
+            <stringProp name="Argument.value">aps-events-ts-latest-01.tea2.tivo.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="events_port" elementType="Argument">
+            <stringProp name="Argument.name">events_port</stringProp>
+            <stringProp name="Argument.value">40295</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="mediastream_host" elementType="Argument">
+            <stringProp name="Argument.name">mediastream_host</stringProp>
+            <stringProp name="Argument.value">aps-provisioning-ts-latest-01.tea2.tivo.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="mediastream_port" elementType="Argument">
+            <stringProp name="Argument.name">mediastream_port</stringProp>
+            <stringProp name="Argument.value">40294</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="persistent_host" elementType="Argument">
+            <stringProp name="Argument.name">persistent_host</stringProp>
+            <stringProp name="Argument.value">aps-persistent-shared-api-ts-latest-01.tea2.tivo.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="persistent_port" elementType="Argument">
+            <stringProp name="Argument.name">persistent_port</stringProp>
+            <stringProp name="Argument.value">40304</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -498,7 +543,7 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Channels" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Channels" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -738,7 +783,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Preview Pane" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Preview Pane" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -933,7 +978,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Detail-SeariesDetail" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Detail-SeariesDetail" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -6358,7 +6403,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Search" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Search" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -6960,13 +7005,13 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="APS-Shared-Service" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="APS-Shared-Service" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -6987,7 +7032,17 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="bodyConfiguration" enabled="true"/>
+        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code = 200" enabled="true">
+          <collectionProp name="Asserion.test_strings">
+            <stringProp name="49586">200</stringProp>
+          </collectionProp>
+          <stringProp name="Assertion.custom_message"></stringProp>
+          <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+          <boolProp name="Assertion.assume_success">true</boolProp>
+          <intProp name="Assertion.test_type">8</intProp>
+        </ResponseAssertion>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="bodyConfiguration" enabled="false"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET bodyConfiguration" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -7001,8 +7056,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/bodyConfiguration</stringProp>
@@ -7016,13 +7071,13 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="false">
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames"></stringProp>
               <stringProp name="JSONPostProcessor.jsonPathExprs"></stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="false">
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
               <stringProp name="cacheKey">true</stringProp>
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
@@ -7049,8 +7104,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/bodyConfiguration</stringProp>
@@ -7084,6 +7139,16 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PostProcessor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code = 401" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="51509">401</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">true</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST bodyConfiguration" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -7104,8 +7169,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/bodyConfiguration</stringProp>
@@ -7152,8 +7217,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/bodyConfiguration</stringProp>
@@ -7202,8 +7267,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/bodyConfiguration</stringProp>
@@ -7250,8 +7315,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/bodyConfiguration</stringProp>
@@ -7300,8 +7365,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/bodyConfiguration</stringProp>
@@ -7348,8 +7413,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/bodyConfiguration</stringProp>
@@ -7383,6 +7448,16 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PostProcessor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code = 401" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="51509">401</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">true</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="provisioningInfo" enabled="true"/>
@@ -7406,8 +7481,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/provisioningInfo</stringProp>
@@ -7461,8 +7536,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/provisioningInfos</stringProp>
@@ -7496,6 +7571,16 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PostProcessor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code = 401" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="51509">401</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">true</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST provisioningInfo" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -7518,8 +7603,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/provisioningInfo</stringProp>
@@ -7573,8 +7658,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/provisioningInfos</stringProp>
@@ -7630,8 +7715,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/provisioningInfo</stringProp>
@@ -7685,8 +7770,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/provisioningInfos</stringProp>
@@ -7735,8 +7820,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/provisioningInfo</stringProp>
@@ -7790,8 +7875,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/provisioningInfo</stringProp>
@@ -7825,6 +7910,16 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PostProcessor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code = 400" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="51508">400</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">true</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="partnerStation" enabled="true"/>
@@ -7841,8 +7936,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/partnerStations</stringProp>
@@ -7896,8 +7991,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/partnerStation</stringProp>
@@ -7951,8 +8046,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/partnerStation</stringProp>
@@ -7986,6 +8081,16 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PostProcessor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code = 404" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="51512">404</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">true</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST partnerStation (379)" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -8004,8 +8109,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/partnerStation</stringProp>
@@ -8059,8 +8164,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/partnerStation</stringProp>
@@ -8112,8 +8217,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/partnerStation</stringProp>
@@ -8167,8 +8272,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/partnerStation</stringProp>
@@ -8217,8 +8322,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/partnerStation</stringProp>
@@ -8272,8 +8377,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/partnerStation</stringProp>
@@ -8307,9 +8412,19 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PostProcessor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code = 404" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="51512">404</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">true</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="accountLinearInfo" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="accountLinearInfo" enabled="false"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET AccountLinearInfo" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -8330,8 +8445,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/accountLinearInfo</stringProp>
@@ -8365,6 +8480,16 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PostProcessor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code = 404" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="51512">404</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">true</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST AccountLinearInfo" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -8382,8 +8507,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/accountLinearInfo</stringProp>
@@ -8437,8 +8562,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/accountLinearInfo</stringProp>
@@ -8489,8 +8614,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/accountLinearInfo</stringProp>
@@ -8544,8 +8669,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/accountLinearInfo</stringProp>
@@ -8594,8 +8719,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/accountLinearInfo</stringProp>
@@ -8649,8 +8774,8 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps_persistent}</stringProp>
-            <stringProp name="HTTPSampler.port">${aps_persistent_port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${persistent_host}</stringProp>
+            <stringProp name="HTTPSampler.port">${persistent_port}</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/v1/accountLinearInfo</stringProp>
@@ -8683,6 +8808,16 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
 */</stringProp>
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PostProcessor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code = 404" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="51512">404</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">true</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -8856,7 +8991,73 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="BuildInfo" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="BuildInfo" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Discovery Info" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${discovery_host}</stringProp>
+          <stringProp name="HTTPSampler.port">${discovery_port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/info</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">import java.time.Instant
+
+Instant instant = Instant.now();
+var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+var min10 = 10 * 60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
+vars.put(&quot;now&quot;,now.toString());
+vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
+vars.put(&quot;startTime&quot;,       now.toString());
+vars.put(&quot;endTime&quot;,         (now + min10).toString());
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49588">202</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="BuildInfo" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>

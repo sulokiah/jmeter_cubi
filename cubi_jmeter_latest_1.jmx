@@ -1318,23 +1318,25 @@ println command.execute().text</stringProp>
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Channels" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Channels" enabled="true"/>
         <hashTree>
-          <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${aps}</stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.protocol">https</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/discovery/v1/channels</stringProp>
-            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </ConfigTestElement>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Status=200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /v1/channels" enabled="true">
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="## API: Channels" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">false</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /v1/channels" enabled="false">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -1374,7 +1376,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PreProcessor>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="49586">200</stringProp>
               </collectionProp>
@@ -1384,6 +1386,126 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="GET /v1/channels w/lastUpdateTime" enabled="true"/>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. GET /v1/channels" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/discovery/v1/channels</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">_lastUpdateTime</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$..lastUpdateTime</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="2. GET /v1/channels w/lastUpdateTime" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="lastUpdateTime" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${_lastUpdateTime}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">lastUpdateTime</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/discovery/v1/channels</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">lastUpdateTime</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$..lastUpdateTime</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="script">import java.time.Instant
+
+Instant instant = Instant.now();
+var now=instant.toEpochMilli();
+var hours2 = 2 * 60 * 60 * 1000
+now = now - hours2
+
+var min10 = 10 * 60 * 1000
+var day10 = 10 * 24 * 60 *  60 * 1000
+vars.put(&quot;now&quot;,now.toString());
+vars.put(&quot;airingStartTime&quot;, (now - day10).toString());
+vars.put(&quot;startTime&quot;,       now.toString());
+vars.put(&quot;endTime&quot;,         (now + min10).toString());
+</stringProp>
+                <stringProp name="scriptLanguage">groovy</stringProp>
+              </JSR223PreProcessor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49586">200</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                <boolProp name="Assertion.assume_success">true</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="3. GET /v1/channels" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/discovery/v1/channels</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">lastUpdateTime</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$..lastUpdateTime</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+            </hashTree>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /v1/channels w/lastUpdateTime" enabled="false">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -1627,7 +1749,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) GET w/missing Authorizaton " enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) Status=401 GET w/missing Authorizaton " enabled="false">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -1646,7 +1768,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response = 401" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="51509">401</stringProp>
               </collectionProp>
@@ -1682,7 +1804,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) GET w/missing BodyId " enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) Status=400 GET w/missing BodyId " enabled="false">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -1701,7 +1823,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response = 400" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="51508">400</stringProp>
               </collectionProp>
@@ -1737,7 +1859,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) GET w/missing Origin-RequestId " enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) Status=200 GET w/missing Origin-RequestId " enabled="false">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -1756,7 +1878,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response = 200" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="49586">200</stringProp>
               </collectionProp>
@@ -1793,7 +1915,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Detail Screens" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Detail Screens" enabled="false"/>
         <hashTree>
           <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="&gt;&gt; Detail Screens" enabled="true">
             <boolProp name="displayJMeterProperties">false</boolProp>
@@ -1803,7 +1925,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
           <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Searies Detail" enabled="true"/>
           <hashTree>
-            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="&gt;&gt;&gt;&gt; Screens/Episodes" enabled="true">
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="&gt;&gt;&gt;&gt; Series Detail" enabled="true">
               <boolProp name="displayJMeterProperties">false</boolProp>
               <boolProp name="displayJMeterVariables">false</boolProp>
               <boolProp name="displaySystemProperties">false</boolProp>
@@ -1811,12 +1933,18 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
             <hashTree/>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Screens/Episodes" enabled="true"/>
             <hashTree>
+              <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="## API: Screens/Episodes" enabled="true">
+                <boolProp name="displayJMeterProperties">false</boolProp>
+                <boolProp name="displayJMeterVariables">false</boolProp>
+                <boolProp name="displaySystemProperties">false</boolProp>
+              </DebugSampler>
+              <hashTree/>
               <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="seriesId" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">tivo:cl.372140392</stringProp>
+                      <stringProp name="Argument.value">${episode_collectionId}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                       <stringProp name="Argument.name">seriesId</stringProp>
@@ -1828,12 +1956,12 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                       <stringProp name="Argument.name">height</stringProp>
                     </elementProp>
-                    <elementProp name="widgth" elementType="HTTPArgument">
+                    <elementProp name="width" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.value">20</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                      <stringProp name="Argument.name">widgth</stringProp>
+                      <stringProp name="Argument.name">width</stringProp>
                     </elementProp>
                   </collectionProp>
                 </elementProp>
@@ -1847,12 +1975,31 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
               </ConfigTestElement>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. screens/episodes" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET screens/episodes" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path"></stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) Status=400 When SeriesId is Null" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="seriesId" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">tivo:cl.372140392</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                       <stringProp name="Argument.name">seriesId</stringProp>
@@ -1873,11 +2020,11 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
                 <stringProp name="HTTPSampler.port"></stringProp>
-                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-                <stringProp name="HTTPSampler.path">/discovery/v1/feedItems/screens/episodes</stringProp>
+                <stringProp name="HTTPSampler.path"></stringProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1887,20 +2034,31 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
               </HTTPSamplerProxy>
-              <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1. screens/episodes - ToDo: Add negative and Offset fields and with optional fields" enabled="false">
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response = 400" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="51508">400</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">true</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) Status=400 When Height is Null" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="seriesId" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">tivo:cl.372140392</stringProp>
+                      <stringProp name="Argument.value">${episode_collectionId}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                       <stringProp name="Argument.name">seriesId</stringProp>
                     </elementProp>
                     <elementProp name="height" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">10</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                       <stringProp name="Argument.name">height</stringProp>
@@ -1914,11 +2072,11 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
                 <stringProp name="HTTPSampler.port"></stringProp>
-                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-                <stringProp name="HTTPSampler.path">/discovery/v1/feedItems/screens/episodes</stringProp>
+                <stringProp name="HTTPSampler.path"></stringProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1927,10 +2085,72 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                <stringProp name="TestPlan.comments">ToDo: Parameterize seriesId,  enumerate optional fields and offset and 3. Add negative cases</stringProp>
               </HTTPSamplerProxy>
-              <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) GET w/missing Authorizaton " enabled="true">
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="51508">400</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">true</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) Status=400 When Width is Null" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="seriesId" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${episode_collectionId}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">seriesId</stringProp>
+                    </elementProp>
+                    <elementProp name="height" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">10</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">height</stringProp>
+                    </elementProp>
+                    <elementProp name="widgth" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">widgth</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path"></stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="51508">400</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">true</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) Status=401 GET w/missing Authorizaton " enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
@@ -1949,7 +2169,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response = 401" enabled="true">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="51509">401</stringProp>
                   </collectionProp>
@@ -1985,7 +2205,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
                 </HeaderManager>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) GET w/missing BodyId " enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) Status=400 GET w/missing BodyId " enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
@@ -2004,7 +2224,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response = 400" enabled="true">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="51508">400</stringProp>
                   </collectionProp>
@@ -2040,7 +2260,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
                 </HeaderManager>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) GET w/missing Origin-RequestId " enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="(neg) Status=200 GET w/missing Origin-RequestId " enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
@@ -2059,7 +2279,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response = 200" enabled="true">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="49586">200</stringProp>
                   </collectionProp>
@@ -5761,6 +5981,20 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
             <hashTree/>
           </hashTree>
         </hashTree>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${aps}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/discovery/v1/channels</stringProp>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </ConfigTestElement>
+        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Events Services" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -18812,11 +19046,6 @@ log.info(&quot;\n###################\n&quot;)
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <com.blazemeter.jmeter.citrix.recorder.CitrixRecorder guiclass="com.blazemeter.jmeter.citrix.recorder.gui.CitrixRecorderGUI" testclass="com.blazemeter.jmeter.citrix.recorder.CitrixRecorder" testname="Citrix Recorder" enabled="true">
-        <collectionProp name="CitrixRecorder.ica_downloading_controller_path"/>
-        <collectionProp name="CitrixRecorder.samplers_parent_controller_path"/>
-      </com.blazemeter.jmeter.citrix.recorder.CitrixRecorder>
-      <hashTree/>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>

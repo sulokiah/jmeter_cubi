@@ -5274,7 +5274,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Search" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Search" enabled="false"/>
         <hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
             <stringProp name="ConstantTimer.delay">1000</stringProp>
@@ -5864,7 +5864,7 @@ vars.put(&quot;endTime&quot;,         (now + min10).toString());
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Socu" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Socu" enabled="false"/>
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Status=200" enabled="true">
             <collectionProp name="Asserion.test_strings">
@@ -17858,7 +17858,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Mind" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Mind" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -18147,7 +18147,7 @@ vars.put(&quot;tstamp&quot;, (now - day10).toString())
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Builds" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Builds" enabled="true"/>
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
